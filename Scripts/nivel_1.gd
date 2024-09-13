@@ -17,5 +17,12 @@ func _on_btnsalir_pressed() -> void:
 
 
 func _on_btnactividad_1_pressed() -> void:
+	Global.numero_video = '1';
+	Trans.change_scene('res://Escenas/videos.tscn')
+	pass # Replace with function body.
+
+
+func _on_btnactividad_2_pressed() -> void:
+	Global.numero_video = '2';
 	Trans.change_scene('res://Escenas/videos.tscn')
 	pass # Replace with function body.

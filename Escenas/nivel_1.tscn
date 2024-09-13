@@ -64,4 +64,5 @@ offset_bottom = 575.0
 text = "Salir"
 
 [connection signal="pressed" from="btnactividad_1" to="." method="_on_btnactividad_1_pressed"]
+[connection signal="pressed" from="btnactividad_2" to="." method="_on_btnactividad_2_pressed"]
 [connection signal="pressed" from="btnsalir" to="." method="_on_btnsalir_pressed"]
