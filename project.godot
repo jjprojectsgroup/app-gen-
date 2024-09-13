@@ -11,8 +11,15 @@ config_version=5
 [application]
 
 config/name="app-gen+"
-config/features=PackedStringArray("4.2", "Mobile")
+config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=430
+window/size/viewport_height=932
+window/stretch/mode="canvas_items"
+window/handheld/orientation=1
 
 [rendering]
 
