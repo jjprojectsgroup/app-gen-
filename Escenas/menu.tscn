@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://btm0qwhybjg6k"]
+
+[ext_resource type="Script" path="res://Scripts/menu.gd" id="1_sal6j"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fiheo"]
+bg_color = Color(0.148096, 0.547012, 0.752326, 1)
+
+[node name="menu" type="Node2D"]
+script = ExtResource("1_sal6j")
+
+[node name="fondo" type="Label" parent="."]
+offset_right = 430.0
+offset_bottom = 931.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_fiheo")
+
+[node name="btnempezar" type="Button" parent="."]
+offset_left = 142.0
+offset_top = 313.0
+offset_right = 271.0
+offset_bottom = 346.0
+text = "Empezar
+"
+
+[node name="btnregistros" type="Button" parent="."]
+offset_left = 144.0
+offset_top = 358.0
+offset_right = 272.0
+offset_bottom = 387.0
+text = "Registros"
+
+[connection signal="pressed" from="btnempezar" to="." method="registrar"]

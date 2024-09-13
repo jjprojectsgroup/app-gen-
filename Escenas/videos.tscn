@@ -1,0 +1,70 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnmceg2ijjrk0"]
+
+[ext_resource type="Script" path="res://Scripts/videos.gd" id="1_rmont"]
+[ext_resource type="VideoStream" path="res://video/video-1.ogv" id="2_d2tvq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glhm5"]
+bg_color = Color(0.613349, 0.432467, 0.0603764, 1)
+
+[node name="videos" type="Node2D"]
+script = ExtResource("1_rmont")
+
+[node name="fondo" type="Label" parent="."]
+offset_right = 430.0
+offset_bottom = 931.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_glhm5")
+
+[node name="reproductor" type="VideoStreamPlayer" parent="."]
+clip_contents = true
+layout_direction = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 41.0
+offset_top = 754.0
+offset_right = 617.0
+offset_bottom = 1074.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 4.71239
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stream = ExtResource("2_d2tvq")
+volume_db = -21.03
+autoplay = true
+loop = true
+
+[node name="btnplaypause" type="Button" parent="."]
+offset_left = 379.0
+offset_top = 552.0
+offset_right = 529.0
+offset_bottom = 583.0
+rotation = 4.71239
+
+[node name="Label" type="Label" parent="btnplaypause"]
+layout_mode = 0
+offset_left = 51.0
+offset_top = 3.0
+offset_right = 91.0
+offset_bottom = 26.0
+text = "Pause"
+
+[node name="btnnext" type="Button" parent="."]
+offset_left = 376.0
+offset_top = 239.0
+offset_right = 526.0
+offset_bottom = 270.0
+rotation = 4.71239
+text = "---->"
+
+[node name="btnback" type="Button" parent="."]
+offset_left = 375.0
+offset_top = 828.0
+offset_right = 525.0
+offset_bottom = 859.0
+rotation = 4.71239
+text = "<----"
+
+[connection signal="pressed" from="btnplaypause" to="." method="_on_btnplaypause_pressed"]
+[connection signal="pressed" from="btnnext" to="." method="_on_btnnext_pressed"]
+[connection signal="pressed" from="btnback" to="." method="_on_btnback_pressed"]
