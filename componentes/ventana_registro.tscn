@@ -1,0 +1,222 @@
+[gd_scene load_steps=8 format=3 uid="uid://cu17wyire743o"]
+
+[ext_resource type="FontFile" uid="uid://doo5wq3dunosb" path="res://font/SofadiOne-Regular.ttf" id="1_wujbf"]
+[ext_resource type="StyleBox" uid="uid://2jtjkqs8fwxq" path="res://styles/btn_normal.tres" id="2_u37q4"]
+[ext_resource type="StyleBox" uid="uid://h6bgr3hde3fm" path="res://styles/btn_hover.tres" id="3_giuje"]
+[ext_resource type="StyleBox" uid="uid://b2qeod4ul35tu" path="res://styles/btn_grado_hover.tres" id="4_uieeq"]
+[ext_resource type="StyleBox" uid="uid://d3bf6a12h7bll" path="res://styles/btn_grado_normal.tres" id="5_2mugn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v7e1y"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.180392, 0.615686, 0.411765, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+expand_margin_bottom = 3.0
+shadow_color = Color(0, 0, 0, 0.117647)
+shadow_size = 6
+shadow_offset = Vector2(0, 5)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tb0uw"]
+bg_color = Color(0.180392, 0.615686, 0.411765, 1)
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 8.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+shadow_color = Color(0, 0, 0, 0.196078)
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[node name="ventana_registro" type="Node2D"]
+
+[node name="ventana" type="Label" parent="."]
+offset_right = 395.0
+offset_bottom = 248.0
+theme_override_fonts/font = ExtResource("1_wujbf")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_v7e1y")
+
+[node name="control_ventana" type="Control" parent="ventana"]
+anchors_preset = 0
+offset_right = 395.0
+offset_bottom = 250.0
+
+[node name="Control" type="Control" parent="ventana/control_ventana"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -146.0
+offset_top = -54.0
+offset_right = 146.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="btncancelar" type="Button" parent="ventana/control_ventana/Control"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -14.5
+offset_right = 112.0
+offset_bottom = 14.5
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_wujbf")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = ExtResource("2_u37q4")
+theme_override_styles/hover = ExtResource("3_giuje")
+theme_override_styles/pressed = ExtResource("3_giuje")
+theme_override_styles/focus = ExtResource("3_giuje")
+text = "CANCELAR"
+
+[node name="btnaceptar" type="Button" parent="ventana/control_ventana/Control"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -94.0
+offset_top = -14.5
+offset_bottom = 14.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_wujbf")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = ExtResource("2_u37q4")
+theme_override_styles/hover = ExtResource("3_giuje")
+theme_override_styles/pressed = ExtResource("3_giuje")
+theme_override_styles/focus = ExtResource("3_giuje")
+text = "ACEPTAR"
+
+[node name="titulo" type="Label" parent="ventana/control_ventana"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -194.0
+offset_top = 16.0
+offset_right = 194.0
+offset_bottom = 49.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_wujbf")
+theme_override_font_sizes/font_size = 18
+text = "COMPLETA EL REGISTRO PARA CONTINUAR"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="titulo" type="Label" parent="ventana/control_ventana/titulo"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -194.0
+offset_top = 86.0
+offset_right = 194.0
+offset_bottom = 119.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_wujbf")
+theme_override_font_sizes/font_size = 15
+text = "SELECCIONA TU GRADO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="nombre" type="LineEdit" parent="ventana/control_ventana"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -170.0
+offset_top = 60.0
+offset_right = 174.0
+offset_bottom = 91.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_wujbf")
+theme_override_styles/normal = SubResource("StyleBoxFlat_tb0uw")
+theme_override_styles/focus = SubResource("StyleBoxFlat_tb0uw")
+placeholder_text = "INTRODUCE TU NOMBRE"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ventana/control_ventana"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -131.5
+offset_top = 13.0
+offset_right = 131.5
+offset_bottom = 53.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="btn1" type="Button" parent="ventana/control_ventana/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_wujbf")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = ExtResource("5_2mugn")
+theme_override_styles/hover = ExtResource("4_uieeq")
+theme_override_styles/pressed = ExtResource("4_uieeq")
+theme_override_styles/focus = ExtResource("4_uieeq")
+text = "   1   "
+
+[node name="btn2" type="Button" parent="ventana/control_ventana/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_wujbf")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = ExtResource("5_2mugn")
+theme_override_styles/hover = ExtResource("4_uieeq")
+theme_override_styles/pressed = ExtResource("4_uieeq")
+theme_override_styles/focus = ExtResource("4_uieeq")
+text = "   2   "
+
+[node name="btn3" type="Button" parent="ventana/control_ventana/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_wujbf")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = ExtResource("5_2mugn")
+theme_override_styles/hover = ExtResource("4_uieeq")
+theme_override_styles/pressed = ExtResource("4_uieeq")
+theme_override_styles/focus = ExtResource("4_uieeq")
+text = "   3   "
+
+[node name="btn4" type="Button" parent="ventana/control_ventana/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_wujbf")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = ExtResource("5_2mugn")
+theme_override_styles/hover = ExtResource("4_uieeq")
+theme_override_styles/pressed = ExtResource("4_uieeq")
+theme_override_styles/focus = ExtResource("4_uieeq")
+text = "   4   "
+
+[node name="btn5" type="Button" parent="ventana/control_ventana/HBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_wujbf")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = ExtResource("5_2mugn")
+theme_override_styles/hover = ExtResource("4_uieeq")
+theme_override_styles/pressed = ExtResource("4_uieeq")
+theme_override_styles/focus = ExtResource("4_uieeq")
+text = "   5   "

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://bw6y3g3haw8kw"]
+
+[ext_resource type="FontFile" uid="uid://doo5wq3dunosb" path="res://font/SofadiOne-Regular.ttf" id="1_s8iau"]
+[ext_resource type="StyleBox" uid="uid://2jtjkqs8fwxq" path="res://styles/btn_normal.tres" id="2_islpc"]
+[ext_resource type="StyleBox" uid="uid://h6bgr3hde3fm" path="res://styles/btn_hover.tres" id="3_mfg8v"]
+
+[node name="btnempezar" type="Button"]
+offset_right = 222.0
+offset_bottom = 63.0
+theme_override_fonts/font = ExtResource("1_s8iau")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = ExtResource("2_islpc")
+theme_override_styles/hover = ExtResource("3_mfg8v")
+theme_override_styles/pressed = ExtResource("3_mfg8v")
+theme_override_styles/focus = ExtResource("3_mfg8v")
+text = "SALIR
+"
