@@ -1,0 +1,189 @@
+[gd_scene load_steps=7 format=3 uid="uid://dvv75npo0twkt"]
+
+[ext_resource type="FontFile" uid="uid://doo5wq3dunosb" path="res://font/SofadiOne-Regular.ttf" id="1_w4m7e"]
+[ext_resource type="StyleBox" uid="uid://2jtjkqs8fwxq" path="res://styles/btn_normal.tres" id="2_0frcd"]
+[ext_resource type="StyleBox" uid="uid://h6bgr3hde3fm" path="res://styles/btn_hover.tres" id="3_5iu50"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vgbpi"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0xb65"]
+bg_color = Color(0.227451, 0.627451, 0.937255, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.85098, 0.85098, 0.85098, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_af8a3"]
+bg_color = Color(0.180392, 0.615686, 0.411765, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 10
+
+[node name="tarjeta_registro" type="Label"]
+offset_left = 15.0
+offset_top = 59.0
+offset_right = 407.0
+offset_bottom = 188.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_vgbpi")
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 6.0
+offset_top = 8.0
+offset_right = 386.0
+offset_bottom = 126.0
+
+[node name="nombre" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -280.0
+offset_bottom = 27.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_w4m7e")
+theme_override_font_sizes/font_size = 18
+text = "Maria fernanda alarcon rojas"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 195
+text_overrun_behavior = 3
+
+[node name="grado" type="Label" parent="Control"]
+layout_mode = 1
+offset_left = 78.0
+offset_top = 3.0
+offset_right = 100.0
+offset_bottom = 29.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_w4m7e")
+theme_override_font_sizes/font_size = 18
+text = "1"
+
+[node name="label" type="Label" parent="Control"]
+layout_mode = 1
+offset_top = 3.0
+offset_right = 70.0
+offset_bottom = 29.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_w4m7e")
+theme_override_font_sizes/font_size = 18
+text = "GRADO:"
+
+[node name="Control1" type="Control" parent="Control"]
+anchors_preset = 0
+offset_left = 116.0
+offset_top = 36.0
+offset_right = 363.0
+offset_bottom = 76.0
+
+[node name="1" type="Label" parent="Control/Control1"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 102.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_w4m7e")
+text = "ACTIVIDAD 1:
+"
+
+[node name="actividad1" type="Label" parent="Control/Control1"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -109.0
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.823529, 0.262745, 0.286275, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_w4m7e")
+text = "NO COMPLETADO"
+
+[node name="Control2" type="Control" parent="Control/Control1"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -1.0
+offset_top = 36.0
+offset_right = 246.0
+offset_bottom = 76.0
+
+[node name="2" type="Label" parent="Control/Control1/Control2"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 102.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_w4m7e")
+text = "ACTIVIDAD 2:
+"
+
+[node name="actividad2" type="Label" parent="Control/Control1/Control2"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -109.0
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.823529, 0.262745, 0.286275, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_w4m7e")
+text = "NO COMPLETADO"
+
+[node name="ProgressBar" type="ProgressBar" parent="Control"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 34.0
+offset_right = 96.0
+offset_bottom = 69.0
+theme_override_fonts/font = ExtResource("1_w4m7e")
+theme_override_styles/background = SubResource("StyleBoxFlat_0xb65")
+theme_override_styles/fill = SubResource("StyleBoxFlat_af8a3")
+value = 76.0
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 84.0
+offset_right = 95.0
+offset_bottom = 107.0
+theme_override_fonts/font = ExtResource("1_w4m7e")
+theme_override_styles/normal = ExtResource("2_0frcd")
+theme_override_styles/hover = ExtResource("3_5iu50")
+theme_override_styles/pressed = ExtResource("3_5iu50")
+theme_override_styles/focus = ExtResource("3_5iu50")
+text = "MOSTRAR"
