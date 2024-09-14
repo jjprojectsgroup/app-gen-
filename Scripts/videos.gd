@@ -10,13 +10,10 @@ var ffmpeg_video_stream = FFmpegVideoStream.new() # se declara el plugin de repr
 func _ready() -> void:
 	ffmpeg_video_stream.file = 'res://video/video-'+Global.numero_video+'.mov'
 	$reproductor.set_stream(ffmpeg_video_stream)
-		# Conecta la señal que se dispara cuando el video comienza a reproducirse
-
 	# Configura la duración máxima de la barra de progreso
 	$progressbar.min_value = 0
 	$progressbar.max_value = $reproductor.get_stream_length()
 	$reproductor.play()
-	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -24,7 +21,6 @@ func _process(delta: float) -> void:
 	if $reproductor.is_playing():
 		var current_position = $reproductor.get_stream_position()
 		$progressbar.value = current_position
-	pass
 
 
 func _on_btnplaypause_pressed() -> void:
@@ -33,7 +29,6 @@ func _on_btnplaypause_pressed() -> void:
 		if $reproductor.paused:
 			$btnplaypause/Label.text = "Pause";
 		$reproductor.paused = !$reproductor.paused;
-
 
 
 func _on_btnnext_pressed() -> void:
@@ -54,7 +49,6 @@ func _on_btnback_pressed() -> void:
 
 func _on_reproductor_finished() -> void:
 	$progressbar.value = 0;
-	pass # Replace with function body.
 
 
 func _on_progressbar_gui_input(event: InputEvent) -> void:

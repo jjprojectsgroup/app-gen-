@@ -12,5 +12,5 @@ func _process(delta: float) -> void:
 
 
 func registrar() -> void:
-	Trans.change_scene('res://Escenas/nivel_1.tscn')
-	pass # Replace with function body.
+	var escena_emergente = preload("res://componentes/ventana_registro.tscn").instantiate()
+	get_tree().root.add_child(escena_emergente)

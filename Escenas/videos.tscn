@@ -27,13 +27,14 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 1.0
 offset_top = 931.0
-offset_right = 930.0
-offset_bottom = 1339.0
+offset_right = 928.0
+offset_bottom = 1336.0
 grow_horizontal = 2
 grow_vertical = 2
 rotation = 4.71239
 size_flags_horizontal = 3
 size_flags_vertical = 3
+volume_db = -18.61
 expand = true
 loop = true
 
@@ -77,6 +78,7 @@ rotation = 4.71239
 theme_override_styles/background = SubResource("StyleBoxFlat_180gs")
 theme_override_styles/fill = SubResource("StyleBoxFlat_7827o")
 value = 50.0
+show_percentage = false
 
 [connection signal="finished" from="reproductor" to="." method="_on_reproductor_finished"]
 [connection signal="pressed" from="btnplaypause" to="." method="_on_btnplaypause_pressed"]
