@@ -7,7 +7,7 @@
 [ext_resource type="FontFile" uid="uid://bgokwbv1ao4ku" path="res://font/Crang.ttf" id="4_0lcft"]
 [ext_resource type="StyleBox" uid="uid://2jtjkqs8fwxq" path="res://styles/btn_normal.tres" id="4_xt765"]
 [ext_resource type="StyleBox" uid="uid://h6bgr3hde3fm" path="res://styles/btn_hover.tres" id="5_ppfvt"]
-[ext_resource type="PackedScene" uid="uid://dxmaohffffinq" path="res://componentes/barra_titulo.tscn" id="6_uqi3u"]
+[ext_resource type="PackedScene" path="res://componentes/barra_titulo.tscn" id="6_uqi3u"]
 [ext_resource type="Texture2D" uid="uid://bbas71x8cdsii" path="res://img/nube.png" id="9_yv0oh"]
 
 [node name="nivel_1" type="Node2D"]
@@ -66,10 +66,10 @@ offset_bottom = 17.0
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_0fffw")
 theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = ExtResource("4_xt765")
+theme_override_styles/focus = ExtResource("5_ppfvt")
 theme_override_styles/hover = ExtResource("5_ppfvt")
 theme_override_styles/pressed = ExtResource("5_ppfvt")
-theme_override_styles/focus = ExtResource("5_ppfvt")
+theme_override_styles/normal = ExtResource("4_xt765")
 text = "Pregunta"
 
 [node name="btnpregunta_2" type="Button" parent="Control/Control"]
@@ -86,10 +86,10 @@ grow_horizontal = 0
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_0fffw")
 theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = ExtResource("4_xt765")
+theme_override_styles/focus = ExtResource("5_ppfvt")
 theme_override_styles/hover = ExtResource("5_ppfvt")
 theme_override_styles/pressed = ExtResource("5_ppfvt")
-theme_override_styles/focus = ExtResource("5_ppfvt")
+theme_override_styles/normal = ExtResource("4_xt765")
 text = "Pregunta"
 
 [node name="Control2" type="Control" parent="Control"]
@@ -117,10 +117,10 @@ offset_bottom = 17.0
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_0fffw")
 theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = ExtResource("4_xt765")
+theme_override_styles/focus = ExtResource("5_ppfvt")
 theme_override_styles/hover = ExtResource("5_ppfvt")
 theme_override_styles/pressed = ExtResource("5_ppfvt")
-theme_override_styles/focus = ExtResource("5_ppfvt")
+theme_override_styles/normal = ExtResource("4_xt765")
 text = "Manualidad"
 
 [node name="btnmanualidad_2" type="Button" parent="Control/Control2"]
@@ -137,10 +137,10 @@ grow_horizontal = 0
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_0fffw")
 theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = ExtResource("4_xt765")
+theme_override_styles/focus = ExtResource("5_ppfvt")
 theme_override_styles/hover = ExtResource("5_ppfvt")
 theme_override_styles/pressed = ExtResource("5_ppfvt")
-theme_override_styles/focus = ExtResource("5_ppfvt")
+theme_override_styles/normal = ExtResource("4_xt765")
 text = "Manualidad"
 
 [node name="Control3" type="Control" parent="Control"]
@@ -168,10 +168,10 @@ offset_bottom = 17.0
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_0fffw")
 theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = ExtResource("4_xt765")
+theme_override_styles/focus = ExtResource("5_ppfvt")
 theme_override_styles/hover = ExtResource("5_ppfvt")
 theme_override_styles/pressed = ExtResource("5_ppfvt")
-theme_override_styles/focus = ExtResource("5_ppfvt")
+theme_override_styles/normal = ExtResource("4_xt765")
 text = "Actividad"
 
 [node name="btnactividad_2" type="Button" parent="Control/Control3"]
@@ -188,10 +188,10 @@ grow_horizontal = 0
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_0fffw")
 theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = ExtResource("4_xt765")
+theme_override_styles/focus = ExtResource("5_ppfvt")
 theme_override_styles/hover = ExtResource("5_ppfvt")
 theme_override_styles/pressed = ExtResource("5_ppfvt")
-theme_override_styles/focus = ExtResource("5_ppfvt")
+theme_override_styles/normal = ExtResource("4_xt765")
 text = "Actividad"
 
 [node name="Nube" type="Sprite2D" parent="Control"]
@@ -233,5 +233,7 @@ vertical_alignment = 1
 [node name="barra_titulo" parent="." instance=ExtResource("6_uqi3u")]
 position = Vector2(-1, 0)
 
+[connection signal="pressed" from="Control/Control/btnpregunta_1" to="." method="_on_btnpregunta_pressed" binds= ["1"]]
+[connection signal="pressed" from="Control/Control/btnpregunta_2" to="." method="_on_btnpregunta_pressed" binds= ["2"]]
 [connection signal="pressed" from="Control/Control3/btnactividad_1" to="." method="_on_btnactividad_1_pressed"]
 [connection signal="pressed" from="Control/Control3/btnactividad_2" to="." method="_on_btnactividad_2_pressed"]

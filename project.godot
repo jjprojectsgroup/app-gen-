@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Trans="*res://Escenas/trans.tscn"
 Global="*res://Scripts/global.gd"
+DataManager="*res://Scripts/data_manager.gd"
 
 [display]
 

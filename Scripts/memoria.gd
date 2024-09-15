@@ -27,7 +27,7 @@ func _on_card_pressed(card: String, button_name: String) -> void:
 
 
 func disabled_selected_card(button_name: String) -> void:
-	var button_path = "%s/%s" % ['Card'+button_name, 'Button'] 
+	var button_path = "%s/%s" % ['Card'+button_name, 'Button']
 	var button = get_node(button_path)
 	button.disabled = true
 	button.flat = false

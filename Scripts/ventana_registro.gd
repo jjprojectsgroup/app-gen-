@@ -29,6 +29,7 @@ func _on_btnaceptar_pressed() -> void:
 
 func _on_btn_nivel_pressed(nivel: String) -> void:
 	colorear(nivel)
+	Global.grado_jugador = nivel;
 	match nivel:
 		'1':
 			Global.nivel = '1'
