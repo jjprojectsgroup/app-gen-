@@ -1,8 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://wsqo2met4pyt"]
+[gd_scene load_steps=9 format=3 uid="uid://wsqo2met4pyt"]
 
 [ext_resource type="Texture2D" uid="uid://gl8sus00ymdj" path="res://img/fondo_principal3.jpg" id="1_4ov16"]
 [ext_resource type="PackedScene" uid="uid://dxmaohffffinq" path="res://componentes/barra_titulo.tscn" id="2_f1u65"]
 [ext_resource type="Texture2D" uid="uid://b6a4j75htkmo4" path="res://img/person_pensando.jpeg" id="3_lm0s8"]
+[ext_resource type="FontFile" uid="uid://doo5wq3dunosb" path="res://font/SofadiOne-Regular.ttf" id="4_u66cs"]
+[ext_resource type="StyleBox" uid="uid://2jtjkqs8fwxq" path="res://styles/btn_normal.tres" id="5_uukf8"]
+[ext_resource type="StyleBox" uid="uid://h6bgr3hde3fm" path="res://styles/btn_hover.tres" id="6_qf8ke"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_16qs3"]
 bg_color = Color(1, 1, 0.960784, 1)
@@ -18,6 +21,9 @@ corner_radius_bottom_left = 15
 shadow_color = Color(0, 0, 0, 0.196078)
 shadow_size = 5
 shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ukvue"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="pregunta" type="Node2D"]
 
@@ -42,41 +48,72 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -163.5
-offset_top = -232.5
+offset_top = -246.5
 offset_right = 163.5
-offset_bottom = 38.5
+offset_bottom = 24.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_16qs3")
 
 [node name="fondo_respuesta" type="Label" parent="Control"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -160.0
-offset_top = 52.5
-offset_right = 167.0
-offset_bottom = 439.5
+anchor_bottom = 1.0
+offset_left = -163.5
+offset_top = -431.0
+offset_right = 163.5
+offset_bottom = -11.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 theme_override_styles/normal = SubResource("StyleBoxFlat_16qs3")
 
-[node name="respuesta" type="Label" parent="Control/fondo_respuesta"]
-layout_mode = 0
-offset_left = 7.0
-offset_top = 7.0
-offset_right = 319.0
-offset_bottom = 221.0
-horizontal_alignment = 1
-autowrap_mode = 2
-
 [node name="PersonPensando" type="Sprite2D" parent="Control/fondo_respuesta"]
-position = Vector2(165, 297)
+position = Vector2(165, 272)
 scale = Vector2(0.290784, 0.290784)
 texture = ExtResource("3_lm0s8")
+
+[node name="respuesta" type="TextEdit" parent="Control/fondo_respuesta"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 8.0
+offset_right = 313.0
+offset_bottom = 179.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_u66cs")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_ukvue")
+placeholder_text = "
+
+
+    AGREGA TU RESPUESTA AQUI"
+wrap_mode = 1
+autowrap_mode = 1
+
+[node name="Button" type="Button" parent="Control/fondo_respuesta"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -62.0
+offset_top = -49.0
+offset_right = 62.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("4_u66cs")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = ExtResource("5_uukf8")
+theme_override_styles/hover = ExtResource("6_qf8ke")
+theme_override_styles/pressed = ExtResource("6_qf8ke")
+theme_override_styles/focus = ExtResource("6_qf8ke")
+text = "GUARDAR"
 
 [node name="pregunta" type="Label" parent="Control"]
 layout_mode = 1
@@ -88,4 +125,10 @@ offset_top = 91.0
 offset_right = 200.0
 offset_bottom = 210.0
 grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_u66cs")
+theme_override_font_sizes/font_size = 22
 theme_override_styles/normal = SubResource("StyleBoxFlat_16qs3")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
