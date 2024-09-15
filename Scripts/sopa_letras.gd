@@ -59,6 +59,8 @@ func check_word(pressed_buttons: Array):
 			return
 	#print("Palabra no encontrada o secuencia incorrecta.")
 
+
+# funcion que verifica si ya se encontraron todas las palabras
 func count_found_words():
 	found_words+=1;
 	if found_words >= 8:
@@ -85,7 +87,6 @@ func update_button_styles():
 		var button = get_node(button_path)
 		if button_name in pressed_buttons:
 			if correct_sequence and button_name in correct_sequence:
-				print('cambio de color')
 				button.add_theme_stylebox_override("normal", theme_selected)
 
 

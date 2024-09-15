@@ -1,0 +1,238 @@
+[gd_scene load_steps=9 format=3 uid="uid://by2u57siqgrio"]
+
+[ext_resource type="Texture2D" uid="uid://4g3gbl14b060" path="res://img/card1.png" id="1_bk5m0"]
+[ext_resource type="Script" path="res://Scripts/memoria.gd" id="1_ifym0"]
+[ext_resource type="Texture2D" uid="uid://jcw06ls7pnfu" path="res://img/card2.png" id="2_imn6l"]
+[ext_resource type="Texture2D" uid="uid://d1306q6idd66n" path="res://img/card3.png" id="3_ba2c0"]
+[ext_resource type="Texture2D" uid="uid://c5hcqrfw2rcwm" path="res://img/card4.png" id="4_oxmbe"]
+[ext_resource type="Texture2D" uid="uid://bx24ot7orvpry" path="res://img/card5.png" id="5_2fqdu"]
+[ext_resource type="Texture2D" uid="uid://b7yvbbtjkbf47" path="res://img/card6.png" id="6_v58fh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ej28l"]
+bg_color = Color(0.1245, 0.5478, 0.83, 1)
+
+[node name="memoria" type="Node2D"]
+script = ExtResource("1_ifym0")
+
+[node name="fondo" type="Label" parent="."]
+offset_top = -2.0
+offset_right = 430.0
+offset_bottom = 929.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_ej28l")
+
+[node name="Card1" type="Sprite2D" parent="."]
+position = Vector2(80, 109)
+scale = Vector2(0.200447, 0.200447)
+texture = ExtResource("1_bk5m0")
+
+[node name="Button" type="Button" parent="Card1"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -264.5
+offset_top = -360.0
+offset_right = -264.5
+offset_bottom = -360.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="Card2" type="Sprite2D" parent="."]
+position = Vector2(213, 112)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_imn6l")
+
+[node name="Button" type="Button" parent="Card2"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -264.5
+offset_top = -360.0
+offset_right = -264.5
+offset_bottom = -360.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="Card3" type="Sprite2D" parent="."]
+position = Vector2(343, 112)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_ba2c0")
+
+[node name="Button" type="Button" parent="Card3"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -264.5
+offset_top = -360.0
+offset_right = -264.5
+offset_bottom = -360.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="Card4" type="Sprite2D" parent="."]
+position = Vector2(82, 283)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_oxmbe")
+
+[node name="Button" type="Button" parent="Card4"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -264.5
+offset_top = -360.0
+offset_right = -264.5
+offset_bottom = -360.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="Card5" type="Sprite2D" parent="."]
+position = Vector2(214, 283)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_2fqdu")
+
+[node name="Button" type="Button" parent="Card5"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -264.5
+offset_top = -360.0
+offset_right = -264.5
+offset_bottom = -360.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="Card6" type="Sprite2D" parent="."]
+position = Vector2(344, 284)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("6_v58fh")
+
+[node name="Button" type="Button" parent="Card6"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -264.5
+offset_top = -360.0
+offset_right = -264.5
+offset_bottom = -360.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="Card7" type="Sprite2D" parent="."]
+position = Vector2(84.0183, 446.161)
+scale = Vector2(0.200447, 0.200447)
+texture = ExtResource("1_bk5m0")
+
+[node name="Button" type="Button" parent="Card7"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -264.5
+offset_top = -360.0
+offset_right = -264.5
+offset_bottom = -360.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="Card8" type="Sprite2D" parent="."]
+position = Vector2(217.018, 449.161)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_imn6l")
+
+[node name="Button" type="Button" parent="Card8"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -264.5
+offset_top = -360.0
+offset_right = -264.5
+offset_bottom = -360.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="Card9" type="Sprite2D" parent="."]
+position = Vector2(347.018, 449.161)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_ba2c0")
+
+[node name="Button" type="Button" parent="Card9"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -264.5
+offset_top = -360.0
+offset_right = -264.5
+offset_bottom = -360.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="Card10" type="Sprite2D" parent="."]
+position = Vector2(86.0183, 620.161)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_oxmbe")
+
+[node name="Button" type="Button" parent="Card10"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -264.5
+offset_top = -360.0
+offset_right = -264.5
+offset_bottom = -360.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="Card11" type="Sprite2D" parent="."]
+position = Vector2(218.018, 620.161)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_2fqdu")
+
+[node name="Button" type="Button" parent="Card11"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -264.5
+offset_top = -360.0
+offset_right = -264.5
+offset_bottom = -360.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[node name="Card12" type="Sprite2D" parent="."]
+position = Vector2(348.018, 621.161)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("6_v58fh")
+
+[node name="Button" type="Button" parent="Card12"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -264.5
+offset_top = -360.0
+offset_right = -264.5
+offset_bottom = -360.0
+grow_horizontal = 2
+grow_vertical = 2
+flat = true
+
+[connection signal="pressed" from="Card1/Button" to="." method="_on_card_pressed" binds= ["1", NodePath(".")]]
+[connection signal="pressed" from="Card2/Button" to="." method="_on_card_pressed" binds= ["2", NodePath(".")]]
+[connection signal="pressed" from="Card3/Button" to="." method="_on_card_pressed" binds= ["3", NodePath(".")]]
+[connection signal="pressed" from="Card4/Button" to="." method="_on_card_pressed" binds= ["4", NodePath(".")]]
+[connection signal="pressed" from="Card5/Button" to="." method="_on_card_pressed" binds= ["5", NodePath(".")]]
+[connection signal="pressed" from="Card6/Button" to="." method="_on_card_pressed" binds= ["6", NodePath(".")]]
+[connection signal="pressed" from="Card7/Button" to="." method="_on_card_pressed" binds= ["1", NodePath(".")]]
+[connection signal="pressed" from="Card8/Button" to="." method="_on_card_pressed" binds= ["2", NodePath(".")]]
+[connection signal="pressed" from="Card9/Button" to="." method="_on_card_pressed" binds= ["3", NodePath(".")]]
+[connection signal="pressed" from="Card10/Button" to="." method="_on_card_pressed" binds= ["4", NodePath(".")]]
+[connection signal="pressed" from="Card11/Button" to="." method="_on_card_pressed" binds= ["5", NodePath(".")]]
+[connection signal="pressed" from="Card12/Button" to="." method="_on_card_pressed" binds= ["6", NodePath(".")]]

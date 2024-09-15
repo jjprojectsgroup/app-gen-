@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://duwrxf2gn45do"]
 
 [ext_resource type="StyleBox" uid="uid://cgxnphxmb1wvw" path="res://styles/btn_letras.tres" id="1_ei6wy"]
-[ext_resource type="Script" path="res://Escenas/sopa_letras.gd" id="1_xihtp"]
+[ext_resource type="Script" path="res://Scripts/sopa_letras.gd" id="1_xihtp"]
 [ext_resource type="StyleBox" uid="uid://l44eg2tywq17" path="res://styles/btn_letras_normal.tres" id="3_cgths"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jihko"]
