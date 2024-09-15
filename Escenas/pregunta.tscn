@@ -1,0 +1,91 @@
+[gd_scene load_steps=5 format=3 uid="uid://wsqo2met4pyt"]
+
+[ext_resource type="Texture2D" uid="uid://gl8sus00ymdj" path="res://img/fondo_principal3.jpg" id="1_4ov16"]
+[ext_resource type="PackedScene" uid="uid://dxmaohffffinq" path="res://componentes/barra_titulo.tscn" id="2_f1u65"]
+[ext_resource type="Texture2D" uid="uid://b6a4j75htkmo4" path="res://img/person_pensando.jpeg" id="3_lm0s8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_16qs3"]
+bg_color = Color(1, 1, 0.960784, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0, 0, 0.196078)
+shadow_size = 5
+shadow_offset = Vector2(0, 4)
+
+[node name="pregunta" type="Node2D"]
+
+[node name="FondoPrincipal3" type="Sprite2D" parent="."]
+position = Vector2(263.75, 467.751)
+scale = Vector2(0.715353, 0.715353)
+texture = ExtResource("1_4ov16")
+
+[node name="barra_titulo" parent="." instance=ExtResource("2_f1u65")]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 430.0
+offset_bottom = 933.0
+
+[node name="imagen" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -163.5
+offset_top = -232.5
+offset_right = 163.5
+offset_bottom = 38.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_16qs3")
+
+[node name="fondo_respuesta" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = 52.5
+offset_right = 167.0
+offset_bottom = 439.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_16qs3")
+
+[node name="respuesta" type="Label" parent="Control/fondo_respuesta"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 7.0
+offset_right = 319.0
+offset_bottom = 221.0
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="PersonPensando" type="Sprite2D" parent="Control/fondo_respuesta"]
+position = Vector2(165, 297)
+scale = Vector2(0.290784, 0.290784)
+texture = ExtResource("3_lm0s8")
+
+[node name="pregunta" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -200.0
+offset_top = 91.0
+offset_right = 200.0
+offset_bottom = 210.0
+grow_horizontal = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_16qs3")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://by2u57siqgrio"]
+[gd_scene load_steps=11 format=3 uid="uid://dnuwdwuovmifl"]
 
 [ext_resource type="Texture2D" uid="uid://4g3gbl14b060" path="res://img/card1.png" id="1_bk5m0"]
 [ext_resource type="Script" path="res://Scripts/memoria.gd" id="1_ifym0"]
@@ -7,21 +7,33 @@
 [ext_resource type="Texture2D" uid="uid://c5hcqrfw2rcwm" path="res://img/card4.png" id="4_oxmbe"]
 [ext_resource type="Texture2D" uid="uid://bx24ot7orvpry" path="res://img/card5.png" id="5_2fqdu"]
 [ext_resource type="Texture2D" uid="uid://b7yvbbtjkbf47" path="res://img/card6.png" id="6_v58fh"]
+[ext_resource type="PackedScene" uid="uid://dxmaohffffinq" path="res://componentes/barra_titulo.tscn" id="8_4raew"]
+[ext_resource type="Texture2D" uid="uid://gl8sus00ymdj" path="res://img/fondo_principal3.jpg" id="9_pav6v"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ej28l"]
-bg_color = Color(0.1245, 0.5478, 0.83, 1)
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
 
 [node name="memoria" type="Node2D"]
 script = ExtResource("1_ifym0")
 
+[node name="FondoPrincipal3" type="Sprite2D" parent="."]
+position = Vector2(262.5, 466.508)
+scale = Vector2(0.713315, 0.713315)
+texture = ExtResource("9_pav6v")
+
 [node name="fondo" type="Label" parent="."]
-offset_top = -2.0
-offset_right = 430.0
-offset_bottom = 929.0
+offset_left = 20.0
+offset_top = 85.0
+offset_right = 412.0
+offset_bottom = 773.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_ej28l")
 
 [node name="Card1" type="Sprite2D" parent="."]
-position = Vector2(80, 109)
+position = Vector2(84.0182, 170.161)
 scale = Vector2(0.200447, 0.200447)
 texture = ExtResource("1_bk5m0")
 
@@ -38,7 +50,7 @@ grow_vertical = 2
 flat = true
 
 [node name="Card2" type="Sprite2D" parent="."]
-position = Vector2(213, 112)
+position = Vector2(217.018, 170.161)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_imn6l")
 
@@ -55,7 +67,7 @@ grow_vertical = 2
 flat = true
 
 [node name="Card3" type="Sprite2D" parent="."]
-position = Vector2(343, 112)
+position = Vector2(347.018, 170.161)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_ba2c0")
 
@@ -72,7 +84,7 @@ grow_vertical = 2
 flat = true
 
 [node name="Card4" type="Sprite2D" parent="."]
-position = Vector2(82, 283)
+position = Vector2(86.0182, 344.161)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_oxmbe")
 
@@ -89,7 +101,7 @@ grow_vertical = 2
 flat = true
 
 [node name="Card5" type="Sprite2D" parent="."]
-position = Vector2(214, 283)
+position = Vector2(218.018, 344.161)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("5_2fqdu")
 
@@ -106,7 +118,7 @@ grow_vertical = 2
 flat = true
 
 [node name="Card6" type="Sprite2D" parent="."]
-position = Vector2(344, 284)
+position = Vector2(348.018, 345.161)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("6_v58fh")
 
@@ -121,9 +133,10 @@ offset_bottom = -360.0
 grow_horizontal = 2
 grow_vertical = 2
 flat = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Card7" type="Sprite2D" parent="."]
-position = Vector2(84.0183, 446.161)
+position = Vector2(88.0365, 507.322)
 scale = Vector2(0.200447, 0.200447)
 texture = ExtResource("1_bk5m0")
 
@@ -140,7 +153,7 @@ grow_vertical = 2
 flat = true
 
 [node name="Card8" type="Sprite2D" parent="."]
-position = Vector2(217.018, 449.161)
+position = Vector2(221.036, 510.322)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_imn6l")
 
@@ -157,7 +170,7 @@ grow_vertical = 2
 flat = true
 
 [node name="Card9" type="Sprite2D" parent="."]
-position = Vector2(347.018, 449.161)
+position = Vector2(351.036, 510.322)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("3_ba2c0")
 
@@ -174,7 +187,7 @@ grow_vertical = 2
 flat = true
 
 [node name="Card10" type="Sprite2D" parent="."]
-position = Vector2(86.0183, 620.161)
+position = Vector2(90.0365, 681.322)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_oxmbe")
 
@@ -191,7 +204,7 @@ grow_vertical = 2
 flat = true
 
 [node name="Card11" type="Sprite2D" parent="."]
-position = Vector2(218.018, 620.161)
+position = Vector2(222.036, 681.322)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("5_2fqdu")
 
@@ -208,7 +221,7 @@ grow_vertical = 2
 flat = true
 
 [node name="Card12" type="Sprite2D" parent="."]
-position = Vector2(348.018, 621.161)
+position = Vector2(352.036, 682.322)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("6_v58fh")
 
@@ -223,6 +236,8 @@ offset_bottom = -360.0
 grow_horizontal = 2
 grow_vertical = 2
 flat = true
+
+[node name="barra_titulo" parent="." instance=ExtResource("8_4raew")]
 
 [connection signal="pressed" from="Card1/Button" to="." method="_on_card_pressed" binds= ["1", "1"]]
 [connection signal="pressed" from="Card2/Button" to="." method="_on_card_pressed" binds= ["2", "2"]]

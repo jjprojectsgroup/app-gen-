@@ -1,9 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bo8xu640dcdj1"]
 
+[ext_resource type="Texture2D" uid="uid://gl8sus00ymdj" path="res://img/fondo_principal3.jpg" id="1_uyhci"]
 [ext_resource type="PackedScene" uid="uid://dxmaohffffinq" path="res://componentes/barra_titulo.tscn" id="1_vre7c"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_le48a"]
-bg_color = Color(0.227451, 0.627451, 0.937255, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ib46q"]
 bg_color = Color(0.843137, 0.835294, 0.843137, 1)
@@ -35,26 +33,10 @@ shadow_offset = Vector2(0, 4)
 [node name="registros" type="Node2D"]
 metadata/_edit_vertical_guides_ = [-257.0]
 
-[node name="Label" type="Label" parent="."]
-offset_left = -7.0
-offset_right = 433.0
-offset_bottom = 938.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_le48a")
-
-[node name="Panel" type="Panel" parent="."]
-visible = false
-modulate = Color(0.227451, 0.627451, 0.937255, 0)
-offset_top = 66.0
-offset_right = 432.0
-offset_bottom = 930.0
-
-[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
-layout_mode = 0
-offset_right = 430.0
-offset_bottom = 868.0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel/ScrollContainer"]
-layout_mode = 2
+[node name="FondoPrincipal3" type="Sprite2D" parent="."]
+position = Vector2(260.5, 465.508)
+scale = Vector2(0.713315, 0.713315)
+texture = ExtResource("1_uyhci")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -102,6 +84,20 @@ offset_bottom = 427.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_c1o3x")
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0.227451, 0.627451, 0.937255, 0)
+offset_top = 66.0
+offset_right = 432.0
+offset_bottom = 930.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+layout_mode = 0
+offset_right = 430.0
+offset_bottom = 868.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/ScrollContainer"]
+layout_mode = 2
 
 [node name="barra_titulo" parent="." instance=ExtResource("1_vre7c")]
 position = Vector2(-1, 0)

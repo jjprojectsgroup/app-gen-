@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cnmceg2ijjrk0"]
+[gd_scene load_steps=6 format=3 uid="uid://cnmceg2ijjrk0"]
 
 [ext_resource type="Script" path="res://Scripts/videos.gd" id="1_rmont"]
+[ext_resource type="Texture2D" uid="uid://cu7elw6do6j4l" path="res://img/adelantar.png" id="2_3wox0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glhm5"]
 bg_color = Color(0.613349, 0.432467, 0.0603764, 1)
@@ -55,20 +56,25 @@ offset_bottom = 26.0
 text = "Pause"
 
 [node name="btnnext" type="Button" parent="."]
-offset_left = 363.0
-offset_top = 239.0
-offset_right = 513.0
-offset_bottom = 270.0
+offset_left = 347.0
+offset_top = 279.0
+offset_right = 417.0
+offset_bottom = 339.0
 rotation = 4.71239
-text = "---->"
+icon = ExtResource("2_3wox0")
+flat = true
+expand_icon = true
 
 [node name="btnback" type="Button" parent="."]
-offset_left = 362.0
-offset_top = 828.0
-offset_right = 512.0
-offset_bottom = 859.0
-rotation = 4.71239
-text = "<----"
+offset_left = 406.0
+offset_top = 658.0
+offset_right = 476.0
+offset_bottom = 718.0
+rotation = 1.5708
+icon = ExtResource("2_3wox0")
+flat = true
+icon_alignment = 1
+expand_icon = true
 
 [node name="progressbar" type="ProgressBar" parent="."]
 offset_left = 407.0
