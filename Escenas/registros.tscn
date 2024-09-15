@@ -1,0 +1,105 @@
+[gd_scene load_steps=6 format=3 uid="uid://bo8xu640dcdj1"]
+
+[ext_resource type="PackedScene" uid="uid://dxmaohffffinq" path="res://componentes/barra_titulo.tscn" id="1_vre7c"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_le48a"]
+bg_color = Color(0.227451, 0.627451, 0.937255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ib46q"]
+bg_color = Color(0.843137, 0.835294, 0.843137, 1)
+border_color = Color(0.737255, 0.737255, 0.737255, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fdix7"]
+bg_color = Color(0.180392, 0.615686, 0.411765, 1)
+corner_radius_top_left = 80
+corner_radius_top_right = 80
+corner_radius_bottom_right = 80
+corner_radius_bottom_left = 80
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c1o3x"]
+bg_color = Color(0.843137, 0.835294, 0.843137, 1)
+border_width_left = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.737255, 0.737255, 0.737255, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+shadow_color = Color(0, 0, 0, 0.196078)
+shadow_size = 3
+shadow_offset = Vector2(0, 4)
+
+[node name="registros" type="Node2D"]
+metadata/_edit_vertical_guides_ = [-257.0]
+
+[node name="Label" type="Label" parent="."]
+offset_left = -7.0
+offset_right = 433.0
+offset_bottom = 938.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_le48a")
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+modulate = Color(0.227451, 0.627451, 0.937255, 0)
+offset_top = 66.0
+offset_right = 432.0
+offset_bottom = 930.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+layout_mode = 0
+offset_right = 430.0
+offset_bottom = 868.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/ScrollContainer"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1.0
+offset_top = 57.0
+offset_right = 430.0
+offset_bottom = 931.0
+
+[node name="punta" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -57.0
+offset_top = 19.0
+offset_right = 57.0
+offset_bottom = 115.0
+grow_horizontal = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_ib46q")
+
+[node name="punto" type="Label" parent="Control/punta"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -12.0
+offset_top = 9.0
+offset_right = 12.0
+offset_bottom = 32.0
+grow_horizontal = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_fdix7")
+
+[node name="fondo" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -205.5
+offset_top = -383.0
+offset_right = 206.5
+offset_bottom = 444.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_c1o3x")
+
+[node name="barra_titulo" parent="." instance=ExtResource("1_vre7c")]
+position = Vector2(-1, 0)
