@@ -1,6 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://btm0qwhybjg6k"]
+[gd_scene load_steps=9 format=3 uid="uid://btm0qwhybjg6k"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_sal6j"]
+[ext_resource type="Texture2D" uid="uid://bx7a1k1rlle2p" path="res://img/fondo_principal2.jpg" id="2_wtuys"]
+[ext_resource type="PackedScene" uid="uid://7suop3txm0dq" path="res://componentes/btnempezar.tscn" id="3_aq6ft"]
+[ext_resource type="Texture2D" uid="uid://yl8shn8kgdwa" path="res://img/logo-app2.png" id="4_yuw1f"]
+[ext_resource type="PackedScene" uid="uid://bw6y3g3haw8kw" path="res://componentes/btnsalir.tscn" id="5_x3cgw"]
+[ext_resource type="PackedScene" uid="uid://d2jm0tsmdsfgo" path="res://componentes/btndatos.tscn" id="6_jpomd"]
+[ext_resource type="FontFile" uid="uid://ysv0ho3gdyl0" path="res://font/Magic Sound.ttf" id="7_18myr"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fiheo"]
 bg_color = Color(0.148096, 0.547012, 0.752326, 1)
@@ -13,19 +19,116 @@ offset_right = 430.0
 offset_bottom = 931.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_fiheo")
 
-[node name="btnempezar" type="Button" parent="."]
-offset_left = 142.0
-offset_top = 313.0
-offset_right = 271.0
-offset_bottom = 346.0
-text = "Empezar
+[node name="FondoPrincipal2" type="Sprite2D" parent="."]
+position = Vector2(189, 466)
+scale = Vector2(1.02482, 1.10284)
+texture = ExtResource("2_wtuys")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 431.0
+offset_bottom = 937.0
+
+[node name="btnempezar" parent="Control" instance=ExtResource("3_aq6ft")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -111.0
+offset_top = -73.5
+offset_right = 111.0
+offset_bottom = -10.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Logo-app2" type="Sprite2D" parent="Control"]
+position = Vector2(207, 277)
+scale = Vector2(0.553357, 0.553357)
+texture = ExtResource("4_yuw1f")
+
+[node name="btnsalir" parent="Control" instance=ExtResource("5_x3cgw")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -111.0
+offset_top = 108.5
+offset_right = 111.0
+offset_bottom = 171.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="btndatos" parent="Control" instance=ExtResource("6_jpomd")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -144.0
+offset_top = 19.5
+offset_right = 144.0
+offset_bottom = 82.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -214.0
+offset_top = 51.0
+offset_right = 214.0
+offset_bottom = 108.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_18myr")
+theme_override_font_sizes/font_size = 30
+text = "BIENVENIDOS A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -89.5
+offset_top = 114.0
+offset_right = 19.5
+offset_bottom = 171.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.862745, 0.239216, 0.258824, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_18myr")
+theme_override_font_sizes/font_size = 30
+text = "GEN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -15.5
+offset_top = 100.0
+offset_right = 93.5
+offset_bottom = 175.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.32549, 0.686275, 0.372549, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_18myr")
+theme_override_font_sizes/font_size = 40
+text = "+
 "
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="btnregistros" type="Button" parent="."]
-offset_left = 144.0
-offset_top = 358.0
-offset_right = 272.0
-offset_bottom = 387.0
-text = "Registros"
-
-[connection signal="pressed" from="btnempezar" to="." method="registrar"]
+[connection signal="pressed" from="Control/btnempezar" to="." method="registrar"]
