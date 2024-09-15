@@ -12,15 +12,33 @@ func _process(delta: float) -> void:
 	pass
 
 
-func _on_card_pressed(card: String, buton: NodePath) -> void:
-	par.append(card)
-	disabled_selected_card(buton)
+func _on_card_pressed(card: String, button_name: String) -> void:
+	par.append([card, button_name])
+	disabled_selected_card(button_name)
 	if par.size() >= 2:
-		if par[0] == card:
+		if par[0][0] == card:
 			print('son iguales')
+			flat_selected_card(button_name, false)
+			flat_selected_card(par[0][1], false)
+		else :
+			enabled_selected_card(button_name)
+			enabled_selected_card(par[0][1])
 		par.clear()
 
-func disabled_selected_card(path_buton: NodePath) -> void:
-	#var buton = get_node(path_buton)
-	print(path_buton.get_as_property_path())
-	pass
+
+func disabled_selected_card(button_name: String) -> void:
+	var button_path = "%s/%s" % ['Card'+button_name, 'Button'] 
+	var button = get_node(button_path)
+	button.disabled = true
+	button.flat = false
+	
+func enabled_selected_card(button_name: String) -> void:
+	var button_path = "%s/%s" % ['Card'+button_name, 'Button'] 
+	var button = get_node(button_path)
+	button.disabled = false
+	button.flat = true
+	
+func flat_selected_card(button_name: String, flat:bool) -> void:
+	var button_path = "%s/%s" % ['Card'+button_name, 'Button'] 
+	var button = get_node(button_path)
+	button.flat = flat
