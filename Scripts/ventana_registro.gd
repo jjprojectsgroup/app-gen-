@@ -16,15 +16,15 @@ func _process(delta: float) -> void:
 
 func _on_btncancelar_pressed() -> void:
 	queue_free();
-	pass # Replace with function body.
 
 
 func _on_btnaceptar_pressed() -> void:
 	var nombre = $ventana/control_ventana/nombre.text;
 	if nombre != '' && Global.nivel != '0': 
 		Global.nombre_jugador = nombre;
+		DataManager.save_data()
 		Trans.change_scene('res://Escenas/nivel_'+ Global.nivel +'.tscn')
-	pass # Replace with function body.
+
 
 
 func _on_btn_nivel_pressed(nivel: String) -> void:

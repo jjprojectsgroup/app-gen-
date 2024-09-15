@@ -7,7 +7,7 @@
 [ext_resource type="FontFile" uid="uid://bgokwbv1ao4ku" path="res://font/Crang.ttf" id="4_0lcft"]
 [ext_resource type="StyleBox" uid="uid://2jtjkqs8fwxq" path="res://styles/btn_normal.tres" id="4_xt765"]
 [ext_resource type="StyleBox" uid="uid://h6bgr3hde3fm" path="res://styles/btn_hover.tres" id="5_ppfvt"]
-[ext_resource type="PackedScene" path="res://componentes/barra_titulo.tscn" id="6_uqi3u"]
+[ext_resource type="PackedScene" uid="uid://dxmaohffffinq" path="res://componentes/barra_titulo.tscn" id="6_uqi3u"]
 [ext_resource type="Texture2D" uid="uid://bbas71x8cdsii" path="res://img/nube.png" id="9_yv0oh"]
 
 [node name="nivel_1" type="Node2D"]

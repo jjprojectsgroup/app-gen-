@@ -15,6 +15,8 @@ var preguntas_nivel_3 = [
 	"¿Cómo se veria nuestro planeta si no cambiamos nuestra forma de tratar al medio ambiente?",
 	"¿Será que llegaremos a un mundo como el de Wall-E? Justifica tu respuesta.",
 ];
+
+var pregunta_actual = "";
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	_preguntar()
@@ -37,11 +39,14 @@ func _preguntar():
 	match Global.numero_pregunta:
 		'1':
 			$Control/pregunta.text = preguntas[0]
+			pregunta_actual = 'respuesta_1'
 		'2':
 			$Control/pregunta.text = preguntas[1]
+			pregunta_actual = 'respuesta_2'
+
 
 
 func _on_guardar_pressed() -> void:
-	print($Control/fondo_respuesta/respuesta.text)
+	#print($Control/fondo_respuesta/respuesta.text)
+	DataManager.update_answer($Control/fondo_respuesta/respuesta.text, pregunta_actual)
 	Trans.change_scene('res://Escenas/nivel_'+ Global.nivel +'.tscn')
-	pass # Replace with function body.
