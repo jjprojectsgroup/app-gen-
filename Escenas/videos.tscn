@@ -1,10 +1,21 @@
-[gd_scene load_steps=6 format=3 uid="uid://cnmceg2ijjrk0"]
+[gd_scene load_steps=11 format=3 uid="uid://cnmceg2ijjrk0"]
 
 [ext_resource type="Script" path="res://Scripts/videos.gd" id="1_rmont"]
 [ext_resource type="Texture2D" uid="uid://cu7elw6do6j4l" path="res://img/adelantar.png" id="2_3wox0"]
+[ext_resource type="Texture2D" uid="uid://blgrivcjk3fax" path="res://img/pausa.png" id="2_y2ua3"]
+[ext_resource type="Texture2D" uid="uid://dctsfyrj3rel8" path="res://img/atras.png" id="4_3v2im"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glhm5"]
 bg_color = Color(0.613349, 0.432467, 0.0603764, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oc727"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2b56g"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5qsy5"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_180gs"]
 bg_color = Color(0.812436, 0.526776, 0.23559, 1)
@@ -16,7 +27,6 @@ bg_color = Color(0.148836, 0.668048, 0.769001, 1)
 script = ExtResource("1_rmont")
 
 [node name="fondo" type="Label" parent="."]
-visible = false
 offset_right = 430.0
 offset_bottom = 931.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_glhm5")
@@ -41,36 +51,53 @@ expand = true
 loop = true
 
 [node name="btnplaypause" type="Button" parent="."]
-offset_left = 366.0
-offset_top = 552.0
-offset_right = 516.0
-offset_bottom = 583.0
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 329.0
+offset_top = 501.0
+offset_right = 397.0
+offset_bottom = 569.0
+grow_horizontal = 0
+grow_vertical = 2
 rotation = 4.71239
-
-[node name="Label" type="Label" parent="btnplaypause"]
-layout_mode = 0
-offset_left = 51.0
-offset_top = 3.0
-offset_right = 91.0
-offset_bottom = 26.0
-text = "Pause"
+theme_override_styles/normal = SubResource("StyleBoxFlat_oc727")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oc727")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_oc727")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_oc727")
+theme_override_styles/focus = SubResource("StyleBoxFlat_oc727")
+icon = ExtResource("2_y2ua3")
+flat = true
+expand_icon = true
 
 [node name="btnnext" type="Button" parent="."]
-offset_left = 347.0
-offset_top = 279.0
-offset_right = 417.0
-offset_bottom = 339.0
+offset_left = 338.0
+offset_top = 271.0
+offset_right = 408.0
+offset_bottom = 331.0
 rotation = 4.71239
+theme_override_styles/normal = SubResource("StyleBoxFlat_2b56g")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2b56g")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2b56g")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_2b56g")
+theme_override_styles/focus = SubResource("StyleBoxFlat_2b56g")
 icon = ExtResource("2_3wox0")
 flat = true
 expand_icon = true
 
 [node name="btnback" type="Button" parent="."]
-offset_left = 406.0
+offset_left = 397.0
 offset_top = 658.0
-offset_right = 476.0
+offset_right = 467.0
 offset_bottom = 718.0
 rotation = 1.5708
+theme_override_styles/normal = SubResource("StyleBoxFlat_5qsy5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5qsy5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5qsy5")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_5qsy5")
+theme_override_styles/focus = SubResource("StyleBoxFlat_5qsy5")
 icon = ExtResource("2_3wox0")
 flat = true
 icon_alignment = 1
@@ -86,6 +113,16 @@ theme_override_styles/background = SubResource("StyleBoxFlat_180gs")
 theme_override_styles/fill = SubResource("StyleBoxFlat_7827o")
 value = 50.0
 show_percentage = false
+
+[node name="Button" type="Button" parent="."]
+offset_left = 9.0
+offset_top = 912.0
+offset_right = 77.0
+offset_bottom = 980.0
+rotation = 4.71239
+icon = ExtResource("4_3v2im")
+flat = true
+expand_icon = true
 
 [connection signal="finished" from="reproductor" to="." method="_on_reproductor_finished"]
 [connection signal="pressed" from="btnplaypause" to="." method="_on_btnplaypause_pressed"]

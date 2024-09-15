@@ -241,8 +241,8 @@ flat = true
 [node name="barra_titulo" parent="." instance=ExtResource("8_4raew")]
 
 [node name="PersonIdea" type="Sprite2D" parent="."]
-position = Vector2(217, 813)
-scale = Vector2(0.487, 0.487)
+position = Vector2(223.375, 818.375)
+scale = Vector2(0.4575, 0.4575)
 texture = ExtResource("10_3wcn4")
 
 [connection signal="pressed" from="Card1/Button" to="." method="_on_card_pressed" binds= ["1", "1"]]

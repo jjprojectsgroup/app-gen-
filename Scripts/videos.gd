@@ -1,5 +1,6 @@
 extends Node2D
-
+var icon_play = preload("res://img/play.png")
+var icon_pausa = preload("res://img/pausa.png")
 var seek_time = 10; # Cuánto adelantar o retroceder (en segundos)
 # Crea una instancia de FFmpegVideoStream
 var ffmpeg_video_stream = FFmpegVideoStream.new() # se declara el plugin de reproducción de video
@@ -25,9 +26,9 @@ func _process(delta: float) -> void:
 
 func _on_btnplaypause_pressed() -> void:
 	if $reproductor.is_playing():
-		$btnplaypause/Label.text = "Play";
+		$btnplaypause.icon = icon_play;
 		if $reproductor.paused:
-			$btnplaypause/Label.text = "Pause";
+			$btnplaypause.icon = icon_pausa;
 		$reproductor.paused = !$reproductor.paused;
 
 
