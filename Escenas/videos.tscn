@@ -15,6 +15,7 @@ bg_color = Color(0.148836, 0.668048, 0.769001, 1)
 script = ExtResource("1_rmont")
 
 [node name="fondo" type="Label" parent="."]
+visible = false
 offset_right = 430.0
 offset_bottom = 931.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_glhm5")

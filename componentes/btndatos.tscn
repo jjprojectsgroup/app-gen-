@@ -4,7 +4,7 @@
 [ext_resource type="StyleBox" uid="uid://2jtjkqs8fwxq" path="res://styles/btn_normal.tres" id="2_lky84"]
 [ext_resource type="StyleBox" uid="uid://h6bgr3hde3fm" path="res://styles/btn_hover.tres" id="3_jck5i"]
 
-[node name="btnempezar" type="Button"]
+[node name="btndatos" type="Button"]
 offset_right = 288.0
 offset_bottom = 63.0
 theme_override_fonts/font = ExtResource("1_6twik")

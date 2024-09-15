@@ -3,7 +3,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$panel_datos.text = 'Nombre: '+ Global.nombre_jugador + ' - Nivel: ' + Global.nivel
+	$Control/panel_datos.text = '¡Hola '+ Global.nombre_jugador + '!  Bienvenido a GEN+. ¡Prepárate para aprender y divertirte!'
 	pass # Replace with function body.
 
 
