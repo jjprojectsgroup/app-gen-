@@ -1,0 +1,1746 @@
+[gd_scene load_steps=7 format=3 uid="uid://duwrxf2gn45do"]
+
+[ext_resource type="StyleBox" uid="uid://cgxnphxmb1wvw" path="res://styles/btn_letras.tres" id="1_ei6wy"]
+[ext_resource type="Script" path="res://Escenas/sopa_letras.gd" id="1_xihtp"]
+[ext_resource type="StyleBox" uid="uid://l44eg2tywq17" path="res://styles/btn_letras_normal.tres" id="3_cgths"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jihko"]
+bg_color = Color(0.513726, 0.909804, 0.941176, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k4w1o"]
+bg_color = Color(0.148096, 0.547012, 0.752326, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xkbkj"]
+bg_color = Color(0.803237, 0.528691, 0.301664, 1)
+
+[node name="sopa_letras" type="Node2D"]
+script = ExtResource("1_xihtp")
+
+[node name="fondo" type="Label" parent="."]
+offset_right = 430.0
+offset_bottom = 931.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jihko")
+
+[node name="fondo2" type="Label" parent="."]
+offset_left = 7.0
+offset_top = 69.0
+offset_right = 422.0
+offset_bottom = 690.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_k4w1o")
+
+[node name="letra_1" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 50.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_2" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 5.0
+offset_right = 95.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_3" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 5.0
+offset_right = 140.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_4" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 5.0
+offset_right = 185.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_5" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 5.0
+offset_right = 230.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_6" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 5.0
+offset_right = 275.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_7" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 5.0
+offset_right = 320.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_8" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 5.0
+offset_right = 365.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "R"
+
+[node name="letra_9" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 365.0
+offset_top = 5.0
+offset_right = 410.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "C"
+
+[node name="letra_10" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 52.0
+offset_right = 50.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_11" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 52.0
+offset_right = 95.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "F"
+
+[node name="letra_12" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 52.0
+offset_right = 140.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_13" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 52.0
+offset_right = 185.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_14" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 52.0
+offset_right = 230.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_15" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 52.0
+offset_right = 275.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_16" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 52.0
+offset_right = 320.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_17" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 52.0
+offset_right = 365.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "E"
+
+[node name="letra_18" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 365.0
+offset_top = 52.0
+offset_right = 410.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "O"
+
+[node name="letra_19" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 99.0
+offset_right = 50.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "R"
+
+[node name="letra_20" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 99.0
+offset_right = 95.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "E"
+
+[node name="letra_21" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 99.0
+offset_right = 140.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "U"
+
+[node name="letra_22" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 99.0
+offset_right = 185.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "S"
+
+[node name="letra_23" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 99.0
+offset_right = 230.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_24" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 99.0
+offset_right = 275.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "R"
+
+[node name="letra_25" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 99.0
+offset_right = 320.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_26" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 99.0
+offset_right = 365.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "D"
+
+[node name="letra_27" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 365.0
+offset_top = 99.0
+offset_right = 410.0
+offset_bottom = 146.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "N"
+
+[node name="letra_28" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 146.0
+offset_right = 50.0
+offset_bottom = 193.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_29" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 146.0
+offset_right = 95.0
+offset_bottom = 193.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_30" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 146.0
+offset_right = 140.0
+offset_bottom = 193.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_31" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 146.0
+offset_right = 185.0
+offset_bottom = 193.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "T"
+
+[node name="letra_32" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 146.0
+offset_right = 230.0
+offset_bottom = 193.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_33" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 146.0
+offset_right = 275.0
+offset_bottom = 193.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_34" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 146.0
+offset_right = 320.0
+offset_bottom = 193.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_35" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 146.0
+offset_right = 365.0
+offset_bottom = 193.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "U"
+
+[node name="letra_36" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 365.0
+offset_top = 146.0
+offset_right = 410.0
+offset_bottom = 193.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "T"
+
+[node name="letra_37" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 193.0
+offset_right = 50.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_38" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 193.0
+offset_right = 95.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "S"
+
+[node name="letra_39" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 193.0
+offset_right = 140.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_40" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 193.0
+offset_right = 185.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_41" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 193.0
+offset_right = 230.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "U"
+
+[node name="letra_42" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 193.0
+offset_right = 275.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_43" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 193.0
+offset_right = 320.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_44" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 193.0
+offset_right = 365.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "C"
+
+[node name="letra_45" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 365.0
+offset_top = 193.0
+offset_right = 410.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_46" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 240.0
+offset_right = 50.0
+offset_bottom = 287.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_47" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 240.0
+offset_right = 95.0
+offset_bottom = 287.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "O"
+
+[node name="letra_48" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 240.0
+offset_right = 140.0
+offset_bottom = 287.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_49" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 240.0
+offset_right = 185.0
+offset_bottom = 287.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_50" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 240.0
+offset_right = 230.0
+offset_bottom = 287.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_51" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 240.0
+offset_right = 275.0
+offset_bottom = 287.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "R"
+
+[node name="letra_52" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 240.0
+offset_right = 320.0
+offset_bottom = 287.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_53" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 240.0
+offset_right = 365.0
+offset_bottom = 287.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "I"
+
+[node name="letra_54" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 365.0
+offset_top = 240.0
+offset_right = 410.0
+offset_bottom = 287.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "M"
+
+[node name="letra_55" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 287.0
+offset_right = 50.0
+offset_bottom = 334.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_56" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 287.0
+offset_right = 95.0
+offset_bottom = 334.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "H"
+
+[node name="letra_57" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 287.0
+offset_right = 140.0
+offset_bottom = 334.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_58" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 287.0
+offset_right = 185.0
+offset_bottom = 334.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "S"
+
+[node name="letra_59" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 287.0
+offset_right = 230.0
+offset_bottom = 334.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_60" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 287.0
+offset_right = 275.0
+offset_bottom = 334.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_61" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 287.0
+offset_right = 320.0
+offset_bottom = 334.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "O"
+
+[node name="letra_62" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 287.0
+offset_right = 365.0
+offset_bottom = 334.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "R"
+
+[node name="letra_63" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 365.0
+offset_top = 287.0
+offset_right = 410.0
+offset_bottom = 334.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "I"
+
+[node name="letra_64" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 334.0
+offset_right = 50.0
+offset_bottom = 381.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_65" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 334.0
+offset_right = 95.0
+offset_bottom = 381.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "C"
+
+[node name="letra_66" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 334.0
+offset_right = 140.0
+offset_bottom = 381.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_67" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 334.0
+offset_right = 185.0
+offset_bottom = 381.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_68" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 334.0
+offset_right = 230.0
+offset_bottom = 381.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_69" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 334.0
+offset_right = 275.0
+offset_bottom = 381.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_70" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 334.0
+offset_right = 320.0
+offset_bottom = 381.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_71" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 334.0
+offset_right = 365.0
+offset_bottom = 381.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_72" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 365.0
+offset_top = 334.0
+offset_right = 410.0
+offset_bottom = 381.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "N"
+
+[node name="letra_73" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 381.0
+offset_right = 50.0
+offset_bottom = 428.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_74" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 381.0
+offset_right = 95.0
+offset_bottom = 428.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "E"
+
+[node name="letra_75" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 381.0
+offset_right = 140.0
+offset_bottom = 428.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "P"
+
+[node name="letra_76" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 381.0
+offset_right = 185.0
+offset_bottom = 428.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "L"
+
+[node name="letra_77" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 381.0
+offset_right = 230.0
+offset_bottom = 428.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_78" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 381.0
+offset_right = 275.0
+offset_bottom = 428.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "N"
+
+[node name="letra_79" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 381.0
+offset_right = 320.0
+offset_bottom = 428.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "E"
+
+[node name="letra_80" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 381.0
+offset_right = 365.0
+offset_bottom = 428.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "T"
+
+[node name="letra_81" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 365.0
+offset_top = 381.0
+offset_right = 410.0
+offset_bottom = 428.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_82" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 428.0
+offset_right = 50.0
+offset_bottom = 475.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_83" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 428.0
+offset_right = 95.0
+offset_bottom = 475.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "S"
+
+[node name="letra_84" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 428.0
+offset_right = 140.0
+offset_bottom = 475.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_85" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 428.0
+offset_right = 185.0
+offset_bottom = 475.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "U"
+
+[node name="letra_86" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 428.0
+offset_right = 230.0
+offset_bottom = 475.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_87" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 428.0
+offset_right = 275.0
+offset_bottom = 475.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_88" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 428.0
+offset_right = 320.0
+offset_bottom = 475.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_89" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 428.0
+offset_right = 365.0
+offset_bottom = 475.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_90" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 365.0
+offset_top = 428.0
+offset_right = 410.0
+offset_bottom = 475.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "C"
+
+[node name="letra_91" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 475.0
+offset_right = 50.0
+offset_bottom = 522.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_92" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 475.0
+offset_right = 95.0
+offset_bottom = 522.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "E"
+
+[node name="letra_93" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 475.0
+offset_right = 140.0
+offset_bottom = 522.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_94" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 475.0
+offset_right = 185.0
+offset_bottom = 522.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "D"
+
+[node name="letra_95" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 475.0
+offset_right = 230.0
+offset_bottom = 522.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_96" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 475.0
+offset_right = 275.0
+offset_bottom = 522.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_97" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 475.0
+offset_right = 320.0
+offset_bottom = 522.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_98" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 475.0
+offset_right = 365.0
+offset_bottom = 522.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_99" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 365.0
+offset_top = 475.0
+offset_right = 410.0
+offset_bottom = 522.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "I"
+
+[node name="letra_100" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 522.0
+offset_right = 50.0
+offset_bottom = 569.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_101" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 522.0
+offset_right = 95.0
+offset_bottom = 569.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "D"
+
+[node name="letra_102" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 522.0
+offset_right = 140.0
+offset_bottom = 569.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_103" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 522.0
+offset_right = 185.0
+offset_bottom = 569.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_104" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 522.0
+offset_right = 230.0
+offset_bottom = 569.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_105" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 522.0
+offset_right = 275.0
+offset_bottom = 569.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_106" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 522.0
+offset_right = 320.0
+offset_bottom = 569.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_107" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 522.0
+offset_right = 365.0
+offset_bottom = 569.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_108" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 365.0
+offset_top = 522.0
+offset_right = 410.0
+offset_bottom = 569.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "O"
+
+[node name="letra_109" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 569.0
+offset_right = 50.0
+offset_bottom = 616.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "R"
+
+[node name="letra_110" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 569.0
+offset_right = 95.0
+offset_bottom = 616.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "E"
+
+[node name="letra_111" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 569.0
+offset_right = 140.0
+offset_bottom = 616.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "C"
+
+[node name="letra_112" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 569.0
+offset_right = 185.0
+offset_bottom = 616.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "I"
+
+[node name="letra_113" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 569.0
+offset_right = 230.0
+offset_bottom = 616.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "C"
+
+[node name="letra_114" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 569.0
+offset_right = 275.0
+offset_bottom = 616.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "L"
+
+[node name="letra_115" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 569.0
+offset_right = 320.0
+offset_bottom = 616.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "A"
+
+[node name="letra_116" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 569.0
+offset_right = 365.0
+offset_bottom = 616.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "R"
+
+[node name="letra_117" type="Button" parent="fondo2" groups=["letter_buttons"]]
+layout_mode = 0
+offset_left = 365.0
+offset_top = 569.0
+offset_right = 410.0
+offset_bottom = 616.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/hover = ExtResource("1_ei6wy")
+theme_override_styles/pressed = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
+text = "N"
+
+[node name="palabras" type="Label" parent="."]
+offset_left = 202.0
+offset_top = 694.0
+offset_right = 428.0
+offset_bottom = 932.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xkbkj")
+
+[node name="contaminacion" type="Label" parent="palabras"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 2.0
+offset_right = 134.0
+offset_bottom = 25.0
+text = "Contaminación"
+uppercase = true
+
+[node name="planeta" type="Label" parent="palabras"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 28.0
+offset_right = 76.0
+offset_bottom = 51.0
+text = "Planeta"
+uppercase = true
+
+[node name="futuro" type="Label" parent="palabras"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 58.0
+offset_right = 68.0
+offset_bottom = 81.0
+text = "Futuro"
+uppercase = true
+
+[node name="desechos" type="Label" parent="palabras"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 91.0
+offset_right = 90.0
+offset_bottom = 114.0
+text = "Desechos"
+uppercase = true
+
+[node name="salud" type="Label" parent="palabras"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 120.0
+offset_right = 60.0
+offset_bottom = 143.0
+text = "Salud"
+uppercase = true
+
+[node name="reciclar" type="Label" parent="palabras"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 150.0
+offset_right = 78.0
+offset_bottom = 173.0
+text = "Reciclar"
+uppercase = true
+
+[node name="reusar" type="Label" parent="palabras"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 179.0
+offset_right = 71.0
+offset_bottom = 202.0
+text = "Reusar"
+uppercase = true
+
+[node name="reducir" type="Label" parent="palabras"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 205.0
+offset_right = 76.0
+offset_bottom = 228.0
+text = "Reducir"
+uppercase = true

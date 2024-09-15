@@ -70,7 +70,7 @@ func _on_progressbar_gui_input(event: InputEvent) -> void:
 		## Mientras arrastra, actualiza la posición
 		#if event is InputEventMouseMotion and is_dragging:
 			#_update_progress(event.position.x)
-			#
+
 ## Función que actualiza el progreso y la posición del video
 #func _update_progress(mouse_x_position):
 	#var progress_ratio = mouse_x_position / $progressbar.size.x
