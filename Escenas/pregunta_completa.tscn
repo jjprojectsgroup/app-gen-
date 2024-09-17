@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://cnsskt2dhlx1k"]
+[gd_scene load_steps=10 format=3 uid="uid://cnsskt2dhlx1k"]
 
+[ext_resource type="Script" path="res://Scripts/pregunta_completa.gd" id="1_f8jgy"]
 [ext_resource type="Texture2D" uid="uid://gl8sus00ymdj" path="res://img/fondo_principal3.jpg" id="1_ji7k7"]
 [ext_resource type="PackedScene" uid="uid://dxmaohffffinq" path="res://componentes/barra_titulo.tscn" id="2_pp13u"]
 [ext_resource type="Texture2D" uid="uid://b6a4j75htkmo4" path="res://img/person_pensando.jpeg" id="3_bga7k"]
@@ -35,6 +36,7 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [node name="pregunta_completa" type="Node2D"]
+script = ExtResource("1_f8jgy")
 
 [node name="FondoPrincipal3" type="Sprite2D" parent="."]
 position = Vector2(263.75, 467.751)

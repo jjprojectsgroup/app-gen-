@@ -4,7 +4,7 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	DataManager.load_data()
-	#$Control/panel_datos.text = '¡Hola '+ Global.nombre_jugador + '!  Bienvenido a GEN+. ¡Prepárate para aprender y divertirte!'
+	$Control/panel_datos.text = '¡Hola '+ Global.nombre_jugador + '!  Bienvenido a GEN+. ¡Prepárate para aprender y divertirte!'
 	pass # Replace with function body.
 
 

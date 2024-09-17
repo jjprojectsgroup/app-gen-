@@ -14,9 +14,11 @@ func _process(delta: float) -> void:
 func load_data():
 	var students = DataManager.load_data()
 	if !students.is_empty():
+		students.reverse()
 		show_data(students)
 	else:
 		print('No hay registros')
+
 
 #func show_data(students: Array):
 	#for student in students:

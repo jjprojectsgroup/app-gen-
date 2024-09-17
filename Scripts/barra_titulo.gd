@@ -3,7 +3,11 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	$Label/Label.text = 'TITULO '+ Global.nivel
+	var name = get_current_scene_name()
+	if name == 'registros':
+		$Label/Label.text = 'Registros'
+	else :
+		$Label/Label.text = 'Grado '+ Global.nivel
 	pass # Replace with function body.
 
 
@@ -15,7 +19,7 @@ func _process(delta: float) -> void:
 func _on_button_pressed() -> void:
 	var current_scene = get_current_scene_name();
 	match current_scene:
-		'nivel_1', 'nivel_2', 'nivel_3':
+		'nivel_1', 'nivel_2', 'nivel_3', 'registros':
 			Trans.change_scene('res://Escenas/menu.tscn')
 			return
 	Trans.change_scene('res://Escenas/nivel_'+ Global.nivel +'.tscn')

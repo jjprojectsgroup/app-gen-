@@ -3,7 +3,8 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	#OS.request_permission("android.permission.WRITE_EXTERNAL_STORAGE")
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -17,4 +18,10 @@ func registrar() -> void:
 
 
 func _on_btndatos_pressed() -> void:
-	Trans.change_scene('res://Escenas/registros.tscn')
+	get_tree().change_scene_to_file('res://Escenas/registros.tscn')
+	
+	#Trans.change_scene('res://Escenas/registros.tscn')
+
+
+func _on_btnsalir_pressed() -> void:
+	Trans.change_scene('res://Escenas/videos.tscn')

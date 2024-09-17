@@ -132,4 +132,5 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="pressed" from="Control/btnempezar" to="." method="registrar"]
+[connection signal="pressed" from="Control/btnsalir" to="." method="_on_btnsalir_pressed"]
 [connection signal="pressed" from="Control/btndatos" to="." method="_on_btndatos_pressed"]
