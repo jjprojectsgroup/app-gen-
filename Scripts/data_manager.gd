@@ -30,7 +30,7 @@ func save_data():
 
 func load_data() -> Array:
 	var file = FileAccess.open(file_path, FileAccess.READ)
-	if file && !file.get_as_text().is_empty():
+	if file && !file.get_as_text().is_empty() && file.get_as_text() !="null":
 		var data : Array = str_to_var(file.get_as_text())
 		file.close()
 		return data;
