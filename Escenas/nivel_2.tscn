@@ -1,0 +1,241 @@
+[gd_scene load_steps=10 format=3 uid="uid://cwjgnnfgw0yx3"]
+
+[ext_resource type="Script" path="res://Scripts/nivel_2.gd" id="1_r644m"]
+[ext_resource type="Texture2D" uid="uid://cpopdbffjw3sq" path="res://img/fondo_principal.jpg" id="2_rx46l"]
+[ext_resource type="Texture2D" uid="uid://dkj6p5f1355ug" path="res://img/letrero.png" id="3_4b3p3"]
+[ext_resource type="FontFile" uid="uid://bgokwbv1ao4ku" path="res://font/Crang.ttf" id="4_u0ybk"]
+[ext_resource type="FontFile" uid="uid://doo5wq3dunosb" path="res://font/SofadiOne-Regular.ttf" id="5_tlo7m"]
+[ext_resource type="StyleBox" uid="uid://h6bgr3hde3fm" path="res://styles/btn_hover.tres" id="6_prlxy"]
+[ext_resource type="StyleBox" uid="uid://2jtjkqs8fwxq" path="res://styles/btn_normal.tres" id="7_premo"]
+[ext_resource type="Texture2D" uid="uid://bbas71x8cdsii" path="res://img/nube.png" id="8_bu8aq"]
+[ext_resource type="PackedScene" uid="uid://dxmaohffffinq" path="res://componentes/barra_titulo.tscn" id="9_bwvvc"]
+
+[node name="nivel_2" type="Node2D"]
+script = ExtResource("1_r644m")
+
+[node name="FondoPrincipal" type="Sprite2D" parent="."]
+position = Vector2(220, 466.245)
+scale = Vector2(0.932624, 0.932624)
+texture = ExtResource("2_rx46l")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 430.0
+offset_bottom = 929.0
+
+[node name="Letrero" type="Sprite2D" parent="Control"]
+position = Vector2(215, 255)
+scale = Vector2(0.853, 0.853)
+texture = ExtResource("3_4b3p3")
+
+[node name="panel_datos" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 178.0
+offset_right = 351.0
+offset_bottom = 350.0
+theme_override_fonts/font = ExtResource("4_u0ybk")
+theme_override_font_sizes/font_size = 21
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Control" type="Control" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -193.5
+offset_top = 91.0
+offset_right = 193.5
+offset_bottom = 131.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="btnpregunta_1" type="Button" parent="Control/Control"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -17.0
+offset_right = 160.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_tlo7m")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = ExtResource("6_prlxy")
+theme_override_styles/hover = ExtResource("6_prlxy")
+theme_override_styles/pressed = ExtResource("6_prlxy")
+theme_override_styles/normal = ExtResource("7_premo")
+text = "Pregunta"
+
+[node name="btnpregunta_2" type="Button" parent="Control/Control"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -17.0
+offset_bottom = 17.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_tlo7m")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = ExtResource("6_prlxy")
+theme_override_styles/hover = ExtResource("6_prlxy")
+theme_override_styles/pressed = ExtResource("6_prlxy")
+theme_override_styles/normal = ExtResource("7_premo")
+text = "Pregunta"
+
+[node name="Control2" type="Control" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -193.5
+offset_top = 204.0
+offset_right = 193.5
+offset_bottom = 244.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="btnmanualidad_1" type="Button" parent="Control/Control2"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -17.0
+offset_right = 160.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_tlo7m")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = ExtResource("6_prlxy")
+theme_override_styles/hover = ExtResource("6_prlxy")
+theme_override_styles/pressed = ExtResource("6_prlxy")
+theme_override_styles/normal = ExtResource("7_premo")
+text = "Manualidad"
+
+[node name="btnmanualidad_2" type="Button" parent="Control/Control2"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -17.0
+offset_bottom = 17.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_tlo7m")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = ExtResource("6_prlxy")
+theme_override_styles/hover = ExtResource("6_prlxy")
+theme_override_styles/pressed = ExtResource("6_prlxy")
+theme_override_styles/normal = ExtResource("7_premo")
+text = "Manualidad"
+
+[node name="Control3" type="Control" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -193.5
+offset_top = 307.0
+offset_right = 193.5
+offset_bottom = 347.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="btnactividad_1" type="Button" parent="Control/Control3"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -17.0
+offset_right = 160.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_tlo7m")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = ExtResource("6_prlxy")
+theme_override_styles/hover = ExtResource("6_prlxy")
+theme_override_styles/pressed = ExtResource("6_prlxy")
+theme_override_styles/normal = ExtResource("7_premo")
+text = "Actividad"
+
+[node name="btnactividad_2" type="Button" parent="Control/Control3"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -17.0
+offset_bottom = 17.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("5_tlo7m")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = ExtResource("6_prlxy")
+theme_override_styles/hover = ExtResource("6_prlxy")
+theme_override_styles/pressed = ExtResource("6_prlxy")
+theme_override_styles/normal = ExtResource("7_premo")
+text = "Actividad"
+
+[node name="Nube" type="Sprite2D" parent="Control"]
+position = Vector2(95, 492)
+scale = Vector2(0.541667, 0.469171)
+texture = ExtResource("8_bu8aq")
+
+[node name="Label" type="Label" parent="Control/Nube"]
+offset_left = -125.154
+offset_top = -31.8171
+offset_right = 143.846
+offset_bottom = 40.1829
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_tlo7m")
+theme_override_font_sizes/font_size = 32
+text = "CONTAMINACIÓN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Nube2" type="Sprite2D" parent="Control"]
+position = Vector2(323, 492)
+scale = Vector2(0.541667, 0.469171)
+texture = ExtResource("8_bu8aq")
+
+[node name="Label" type="Label" parent="Control/Nube2"]
+offset_left = -125.154
+offset_top = -31.8171
+offset_right = 143.846
+offset_bottom = 40.1829
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_tlo7m")
+theme_override_font_sizes/font_size = 32
+text = "RECICLAJE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="barra_titulo" parent="." instance=ExtResource("9_bwvvc")]
+position = Vector2(-1, 0)
+
+[connection signal="pressed" from="Control/Control/btnpregunta_1" to="." method="_on_btnpregunta_pressed" binds= ["1"]]
+[connection signal="pressed" from="Control/Control/btnpregunta_2" to="." method="_on_btnpregunta_pressed" binds= ["2"]]
+[connection signal="pressed" from="Control/Control2/btnmanualidad_1" to="." method="_on_btnmanualidad_1_pressed" binds= ["3"]]
+[connection signal="pressed" from="Control/Control2/btnmanualidad_2" to="." method="_on_btnmanualidad_2_pressed" binds= ["6"]]
+[connection signal="pressed" from="Control/Control3/btnactividad_1" to="." method="_on_btnactividad_1_pressed"]
+[connection signal="pressed" from="Control/Control3/btnactividad_2" to="." method="_on_btnactividad_2_pressed"]

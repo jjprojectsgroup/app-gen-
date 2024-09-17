@@ -14,3 +14,7 @@ func _process(delta: float) -> void:
 func registrar() -> void:
 	var escena_emergente = preload("res://componentes/ventana_registro.tscn").instantiate()
 	get_tree().root.add_child(escena_emergente)
+
+
+func _on_btndatos_pressed() -> void:
+	Trans.change_scene('res://Escenas/registros.tscn')

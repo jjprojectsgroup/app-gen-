@@ -9,7 +9,10 @@ var ffmpeg_video_stream = FFmpegVideoStream.new() # se declara el plugin de repr
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	ffmpeg_video_stream.file = 'res://video/video-'+Global.numero_video+'.mov'
+	var ruta_video = 'res://video/video-'+Global.numero_video+'.mov'
+	if Global.numero_video == '5' || Global.numero_video == '6':
+		ruta_video = 'res://video/video-'+Global.numero_video+'.mp4'
+	ffmpeg_video_stream.file = ruta_video
 	$reproductor.set_stream(ffmpeg_video_stream)
 	# Configura la duración máxima de la barra de progreso
 	$progressbar.min_value = 0
@@ -61,22 +64,8 @@ func _on_progressbar_gui_input(event: InputEvent) -> void:
 		$reproductor.set_stream_position(new_position)
 		# Actualizar manualmente la barra de progreso
 		$progressbar.value = new_position
-	 #Si el usuario empieza a arrastrar
-	#if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
-		#if event.pressed:
-			#is_dragging = true  # Comienza a arrastrar
-			#_update_progress(event.position.x)
-		#else:
-			#is_dragging = false  # Deja de arrastrar cuando suelta el clic
-		## Mientras arrastra, actualiza la posición
-		#if event is InputEventMouseMotion and is_dragging:
-			#_update_progress(event.position.x)
 
-## Función que actualiza el progreso y la posición del video
-#func _update_progress(mouse_x_position):
-	#var progress_ratio = mouse_x_position / $progressbar.size.x
-	#var new_position = progress_ratio * $reproductor.get_stream_length()
-	## Mover el video a la nueva posición mientras arrastra
-	#$reproductor.set_stream_position(new_position)
-	## Actualizar manualmente la barra de progreso
-	#$progressbar.value = new_position
+
+func _on_button_pressed() -> void:
+	$reproductor.stop()
+	Trans.change_scene('res://Escenas/nivel_'+ Global.nivel +'.tscn')

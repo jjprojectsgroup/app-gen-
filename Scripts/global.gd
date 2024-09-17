@@ -7,6 +7,7 @@ var nivel = '1'; # el nivel seleccionado por el jugador
 # datos del jugador
 var nombre_jugador; # el nombre seleccionado por el jugador
 var grado_jugador; # el nombre seleccionado por el jugador
+var student_data: Dictionary;
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

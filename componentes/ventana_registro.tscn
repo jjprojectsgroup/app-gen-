@@ -45,6 +45,12 @@ shadow_offset = Vector2(0, 3)
 position = Vector2(18, 287)
 script = ExtResource("1_35dfx")
 
+[node name="Panel" type="Panel" parent="."]
+offset_left = -34.0
+offset_top = -302.0
+offset_right = 430.0
+offset_bottom = 662.0
+
 [node name="ventana" type="Label" parent="."]
 offset_right = 395.0
 offset_bottom = 248.0

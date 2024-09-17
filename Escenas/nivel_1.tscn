@@ -235,5 +235,7 @@ position = Vector2(-1, 0)
 
 [connection signal="pressed" from="Control/Control/btnpregunta_1" to="." method="_on_btnpregunta_pressed" binds= ["1"]]
 [connection signal="pressed" from="Control/Control/btnpregunta_2" to="." method="_on_btnpregunta_pressed" binds= ["2"]]
+[connection signal="pressed" from="Control/Control2/btnmanualidad_1" to="." method="_on_btnmanualidad_1_pressed" binds= ["5"]]
+[connection signal="pressed" from="Control/Control2/btnmanualidad_2" to="." method="_on_btnmanualidad_2_pressed" binds= ["1"]]
 [connection signal="pressed" from="Control/Control3/btnactividad_1" to="." method="_on_btnactividad_1_pressed"]
 [connection signal="pressed" from="Control/Control3/btnactividad_2" to="." method="_on_btnactividad_2_pressed"]

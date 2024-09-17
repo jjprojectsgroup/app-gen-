@@ -34,8 +34,6 @@ position = Vector2(263.75, 467.751)
 scale = Vector2(0.715353, 0.715353)
 texture = ExtResource("1_4ov16")
 
-[node name="barra_titulo" parent="." instance=ExtResource("2_f1u65")]
-
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
@@ -56,6 +54,10 @@ offset_bottom = 24.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_16qs3")
+
+[node name="imagen_pregunta" type="Sprite2D" parent="Control/imagen"]
+position = Vector2(164, 135)
+scale = Vector2(0.54, 0.54)
 
 [node name="fondo_respuesta" type="Label" parent="Control"]
 layout_mode = 1
@@ -134,5 +136,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_16qs3")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
+
+[node name="barra_titulo" parent="." instance=ExtResource("2_f1u65")]
 
 [connection signal="pressed" from="Control/fondo_respuesta/Button" to="." method="_on_guardar_pressed"]
