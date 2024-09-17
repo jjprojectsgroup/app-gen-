@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dnuwdwuovmifl"]
+[gd_scene load_steps=16 format=3 uid="uid://dnuwdwuovmifl"]
 
 [ext_resource type="Script" path="res://Scripts/memoria.gd" id="1_ifym0"]
 [ext_resource type="StyleBox" uid="uid://diiy4ui5efpvu" path="res://styles/tarjeta.res" id="6_dmk1o"]
@@ -8,7 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://cfy5uf276ntui" path="res://componentes/card1.tscn" id="11_4oe6n"]
 [ext_resource type="PackedScene" uid="uid://cubv4uuh8pvey" path="res://componentes/card2.tscn" id="12_cwj6l"]
 [ext_resource type="PackedScene" uid="uid://dpmns86toab2w" path="res://componentes/ventana_felicidades.tscn" id="12_kiitb"]
+[ext_resource type="AudioStream" uid="uid://cd74s1ic3e1n" path="res://sonido/slide_carta.mp3" id="13_27cd1"]
 [ext_resource type="PackedScene" uid="uid://4l0rb4fhr3q7" path="res://componentes/card3.tscn" id="13_kybwd"]
+[ext_resource type="AudioStream" uid="uid://csbx1opq8s251" path="res://sonido/check.mp3" id="14_kd23j"]
 [ext_resource type="PackedScene" uid="uid://daxg4d2o0v72l" path="res://componentes/card4.tscn" id="14_yg4uv"]
 [ext_resource type="PackedScene" uid="uid://r0fa3ds4ycyq" path="res://componentes/card5.tscn" id="15_6qtdm"]
 [ext_resource type="PackedScene" uid="uid://dbcrpb1a13p0x" path="res://componentes/card6.tscn" id="16_ejker"]
@@ -284,6 +286,12 @@ flat = true
 
 [node name="ventana_felicidades" parent="." instance=ExtResource("12_kiitb")]
 visible = false
+
+[node name="slide_carta" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_27cd1")
+
+[node name="check" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_kd23j")
 
 [connection signal="pressed" from="Card1/Button" to="." method="_on_card_pressed" binds= ["1", "1"]]
 [connection signal="pressed" from="Card2/Button" to="." method="_on_card_pressed" binds= ["2", "2"]]

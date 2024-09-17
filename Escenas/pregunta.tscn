@@ -91,7 +91,6 @@ theme_override_colors/caret_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_u66cs")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("StyleBoxFlat_ukvue")
-text = "saaaaaaaaaaaaaaaaaa hola mi la"
 placeholder_text = "
 
 
