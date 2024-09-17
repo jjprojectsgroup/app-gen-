@@ -85,18 +85,19 @@ offset_left = 15.0
 offset_top = 8.0
 offset_right = 313.0
 offset_bottom = 179.0
-theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 1)
 theme_override_colors/caret_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_u66cs")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("StyleBoxFlat_ukvue")
+text = "saaaaaaaaaaaaaaaaaa hola mi la"
 placeholder_text = "
 
 
     AGREGA TU RESPUESTA AQUI"
 wrap_mode = 1
-autowrap_mode = 1
+autowrap_mode = 2
 
 [node name="Button" type="Button" parent="Control/fondo_respuesta"]
 layout_mode = 1
@@ -113,10 +114,10 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("4_u66cs")
 theme_override_font_sizes/font_size = 25
-theme_override_styles/focus = ExtResource("6_qf8ke")
+theme_override_styles/normal = ExtResource("5_uukf8")
 theme_override_styles/hover = ExtResource("6_qf8ke")
 theme_override_styles/pressed = ExtResource("6_qf8ke")
-theme_override_styles/normal = ExtResource("5_uukf8")
+theme_override_styles/focus = ExtResource("6_qf8ke")
 text = "GUARDAR"
 
 [node name="pregunta" type="Label" parent="Control"]

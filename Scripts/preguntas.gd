@@ -1,19 +1,19 @@
 extends Node2D
 
 var preguntas_nivel_1 = [
-	["¿Qué es contaminación?", "res://img/8.png"],
-	["¿Qué acciones puedes hacer en tu casa para que este mundo no sea como el de Wall-E?", "res://img/5.png"],
+	["¿Qué es contaminación?", "res://img/10.png"],
+	["¿Qué acciones puedes hacer en tu casa para que este mundo no sea como el de Wall-E?", "res://img/9.png"],
 ];
 
 var preguntas_nivel_2 = [
-	["¿Cómo pueden ayudar al Señor + al salvar el planeta?", "res://img/2.png"],
-	["¿Qué acciones causaron que el mundo se transformara como el de Wall-E?", "res://img/3.png"],
+	["¿Cómo pueden ayudar al Señor + al salvar el planeta?", "res://img/10.png"],
+	["¿Qué acciones causaron que el mundo se transformara como el de Wall-E?", "res://img/9.png"],
 ];
 
 
 var preguntas_nivel_3 = [
-	["¿Cómo se veria nuestro planeta si no cambiamos nuestra forma de tratar al medio ambiente?", "res://img/6.png"],
-	["¿Será que llegaremos a un mundo como el de Wall-E? Justifica tu respuesta.", "res://img/1.png"],
+	["¿Cómo se veria nuestro planeta si no cambiamos nuestra forma de tratar al medio ambiente?", "res://img/10.png"],
+	["¿Será que llegaremos a un mundo como el de Wall-E? Justifica tu respuesta.", "res://img/9.png"],
 ];
 
 var pregunta_actual = "";

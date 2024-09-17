@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://dpmns86toab2w"]
+[gd_scene load_steps=7 format=3 uid="uid://dpmns86toab2w"]
 
+[ext_resource type="Script" path="res://Scripts/ventana_felicidades.gd" id="1_jmqn7"]
 [ext_resource type="FontFile" uid="uid://doo5wq3dunosb" path="res://font/SofadiOne-Regular.ttf" id="1_ns03e"]
 [ext_resource type="StyleBox" uid="uid://2jtjkqs8fwxq" path="res://styles/btn_normal.tres" id="2_2gich"]
 [ext_resource type="StyleBox" uid="uid://h6bgr3hde3fm" path="res://styles/btn_hover.tres" id="3_m2pyy"]
@@ -25,20 +26,35 @@ shadow_size = 6
 shadow_offset = Vector2(0, 5)
 
 [node name="ventana_felicidades" type="Node2D"]
+script = ExtResource("1_jmqn7")
 
-[node name="ventana" type="Label" parent="."]
-offset_right = 395.0
-offset_bottom = 329.0
+[node name="Panel" type="Panel" parent="."]
+offset_right = 430.0
+offset_bottom = 934.0
+
+[node name="ventana" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -197.5
+offset_top = -164.5
+offset_right = 197.5
+offset_bottom = 164.5
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_fonts/font = ExtResource("1_ns03e")
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_jscfu")
 
-[node name="control_ventana" type="Control" parent="ventana"]
+[node name="control_ventana" type="Control" parent="Panel/ventana"]
 anchors_preset = 0
 offset_right = 395.0
 offset_bottom = 323.0
 
-[node name="titulo" type="Label" parent="ventana/control_ventana"]
+[node name="titulo" type="Label" parent="Panel/ventana/control_ventana"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -57,7 +73,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="btnaceptar" type="Button" parent="ventana/control_ventana"]
+[node name="btnaceptar" type="Button" parent="Panel/ventana/control_ventana"]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -78,7 +94,9 @@ theme_override_styles/pressed = ExtResource("3_m2pyy")
 theme_override_styles/focus = ExtResource("3_m2pyy")
 text = "CONTINUAR"
 
-[node name="PersonIdea" type="Sprite2D" parent="ventana/control_ventana"]
+[node name="PersonIdea" type="Sprite2D" parent="Panel/ventana/control_ventana"]
 position = Vector2(196, 198)
 scale = Vector2(0.324, 0.324)
 texture = ExtResource("4_rteh1")
+
+[connection signal="pressed" from="Panel/ventana/control_ventana/btnaceptar" to="." method="_on_btnaceptar_pressed"]

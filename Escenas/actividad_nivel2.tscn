@@ -1,0 +1,119 @@
+[gd_scene load_steps=8 format=3 uid="uid://bwbi6cm65ykhh"]
+
+[ext_resource type="Texture2D" uid="uid://gl8sus00ymdj" path="res://img/fondo_principal3.jpg" id="2_8fifk"]
+[ext_resource type="FontFile" uid="uid://doo5wq3dunosb" path="res://font/SofadiOne-Regular.ttf" id="4_hxs65"]
+[ext_resource type="Texture2D" uid="uid://c7cquwc8ru0o4" path="res://img/11.png" id="5_mvs0m"]
+[ext_resource type="Texture2D" uid="uid://bawbrwqh4kdqx" path="res://img/12.png" id="6_ronca"]
+[ext_resource type="PackedScene" uid="uid://dxmaohffffinq" path="res://componentes/barra_titulo.tscn" id="7_gbsfu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_16qs3"]
+bg_color = Color(1, 1, 0.960784, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0, 0, 0.196078)
+shadow_size = 5
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aecxp"]
+bg_color = Color(1, 1, 0.960784, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0, 0, 0.196078)
+shadow_size = 5
+shadow_offset = Vector2(0, 4)
+
+[node name="actividad_nivel2" type="Node2D"]
+
+[node name="FondoPrincipal3" type="Sprite2D" parent="."]
+position = Vector2(263.75, 467.751)
+scale = Vector2(0.715353, 0.715353)
+texture = ExtResource("2_8fifk")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 430.0
+offset_bottom = 933.0
+
+[node name="imagen" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -163.5
+offset_top = -388.5
+offset_right = 163.5
+offset_bottom = -117.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_16qs3")
+
+[node name="imagen_pregunta" type="Sprite2D" parent="Control/imagen"]
+position = Vector2(164, 135)
+scale = Vector2(0.54, 0.54)
+
+[node name="imagen2" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -163.5
+offset_top = -100.5
+offset_right = 163.5
+offset_bottom = 170.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_16qs3")
+
+[node name="imagen_pregunta" type="Sprite2D" parent="Control/imagen2"]
+position = Vector2(164, 135)
+scale = Vector2(0.54, 0.54)
+
+[node name="fondo" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -163.0
+offset_top = 653.0
+offset_right = 164.0
+offset_bottom = 918.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_hxs65")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_aecxp")
+text = "Reciclar es muy importante porque ayuda a cuidar nuestro planeta. Al reciclar, usamos cosas viejas para hacer nuevas, lo que nos permite ahorrar recursos y reducir la basura. ¡Reciclar es fácil y divertido!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="barra_titulo" parent="." instance=ExtResource("7_gbsfu")]
+
+[node name="11" type="Sprite2D" parent="."]
+position = Vector2(214.5, 212.5)
+scale = Vector2(0.819527, 0.819527)
+texture = ExtResource("5_mvs0m")
+
+[node name="12" type="Sprite2D" parent="."]
+position = Vector2(215.312, 500.875)
+scale = Vector2(0.544207, 0.544207)
+texture = ExtResource("6_ronca")

@@ -1,78 +1,66 @@
-[gd_scene load_steps=6 format=3 uid="uid://cqm3xoyqsqm8d"]
+[gd_scene load_steps=6 format=3 uid="uid://r0fa3ds4ycyq"]
 
-[ext_resource type="Texture2D" uid="uid://jcw06ls7pnfu" path="res://img/card2.png" id="1_21bgo"]
-[ext_resource type="Texture2D" uid="uid://bkbq1xwwp8dd8" path="res://img/card-post.png" id="2_rfh6h"]
+[ext_resource type="Texture2D" uid="uid://bx24ot7orvpry" path="res://img/card5.png" id="1_ba503"]
+[ext_resource type="Texture2D" uid="uid://bkbq1xwwp8dd8" path="res://img/card-post.png" id="2_ws2l3"]
 
-[sub_resource type="Animation" id="Animation_jcd7k"]
+[sub_resource type="Animation" id="Animation_1lxcd"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("AnimationPlayer/Card-post:visible")
+tracks/0/path = NodePath("Card-post:skew")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
+"update": 0,
+"values": [0.0]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("AnimationPlayer/Card2:visible")
+tracks/1/path = NodePath("Card-post:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [false]
+"values": [true]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("AnimationPlayer/Card-post:skew")
+tracks/2/path = NodePath("Card5:skew")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [-1.56905]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("AnimationPlayer/Card2:skew")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [-1.56907]
+"values": [0.0]
 }
 
-[sub_resource type="Animation" id="Animation_axk53"]
+[sub_resource type="Animation" id="Animation_k4eg4"]
 resource_name = "voltear"
 length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("AnimationPlayer/Card-post:visible")
+tracks/0/path = NodePath("Card-post:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [true]
+"values": [true, false]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("AnimationPlayer/Card2:visible")
+tracks/1/path = NodePath("Card5:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -84,7 +72,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("AnimationPlayer/Card-post:skew")
+tracks/2/path = NodePath("Card-post:skew")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -96,36 +84,33 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("AnimationPlayer/Card2:skew")
+tracks/3/path = NodePath("Card5:skew")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0.2, 0.4),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-1.56907, 0.0]
+"values": [-1.56905, 0.0]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_cyc5b"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fcqmy"]
 _data = {
-"RESET": SubResource("Animation_jcd7k"),
-"voltear": SubResource("Animation_axk53")
+"RESET": SubResource("Animation_1lxcd"),
+"voltear": SubResource("Animation_k4eg4")
 }
 
-[node name="Card2" type="Node2D"]
+[node name="Card5" type="Node2D"]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_cyc5b")
+"": SubResource("AnimationLibrary_fcqmy")
 }
 
-[node name="Card2" type="Sprite2D" parent="AnimationPlayer"]
-visible = false
+[node name="Card5" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
-skew = -1.56907
-texture = ExtResource("1_21bgo")
+texture = ExtResource("1_ba503")
 
-[node name="Card-post" type="Sprite2D" parent="AnimationPlayer"]
+[node name="Card-post" type="Sprite2D" parent="."]
 scale = Vector2(0.2, 0.2)
-skew = -1.56905
-texture = ExtResource("2_rfh6h")
+texture = ExtResource("2_ws2l3")

@@ -1,11 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://duwrxf2gn45do"]
+[gd_scene load_steps=10 format=3 uid="uid://duwrxf2gn45do"]
 
-[ext_resource type="StyleBox" uid="uid://cgxnphxmb1wvw" path="res://styles/btn_letras.tres" id="1_ei6wy"]
+[ext_resource type="StyleBox" uid="uid://bd8obu1box66q" path="res://styles/btn_letras.tres" id="1_ei6wy"]
 [ext_resource type="Script" path="res://Scripts/sopa_letras.gd" id="1_wg2qn"]
 [ext_resource type="Texture2D" uid="uid://gl8sus00ymdj" path="res://img/fondo_principal3.jpg" id="2_yyhdy"]
-[ext_resource type="StyleBox" uid="uid://l44eg2tywq17" path="res://styles/btn_letras_normal.tres" id="3_cgths"]
-[ext_resource type="PackedScene" path="res://componentes/barra_titulo.tscn" id="4_rc5m7"]
+[ext_resource type="StyleBox" path="res://styles/btn_letras_normal.tres" id="3_cgths"]
+[ext_resource type="PackedScene" uid="uid://dxmaohffffinq" path="res://componentes/barra_titulo.tscn" id="4_rc5m7"]
 [ext_resource type="Texture2D" uid="uid://dw2ag3riy221v" path="res://img/person_idea.png" id="6_ot7op"]
+[ext_resource type="PackedScene" uid="uid://dpmns86toab2w" path="res://componentes/ventana_felicidades.tscn" id="7_ame3x"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jihko"]
 bg_color = Color(0.513726, 0.909804, 0.941176, 1)
@@ -45,10 +46,10 @@ offset_right = 50.0
 offset_bottom = 52.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_2" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -59,10 +60,10 @@ offset_right = 95.0
 offset_bottom = 52.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "D"
 
 [node name="letra_3" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -73,11 +74,11 @@ offset_right = 140.0
 offset_bottom = 52.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "K"
 
 [node name="letra_4" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -87,10 +88,10 @@ offset_right = 185.0
 offset_bottom = 52.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_5" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -101,10 +102,10 @@ offset_right = 230.0
 offset_bottom = 52.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "F"
 
 [node name="letra_6" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -115,10 +116,10 @@ offset_right = 275.0
 offset_bottom = 52.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_7" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -129,11 +130,11 @@ offset_right = 320.0
 offset_bottom = 52.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "M"
 
 [node name="letra_8" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -143,10 +144,10 @@ offset_right = 365.0
 offset_bottom = 52.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "R"
 
 [node name="letra_9" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -157,10 +158,10 @@ offset_right = 410.0
 offset_bottom = 52.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "C"
 
 [node name="letra_10" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -171,10 +172,10 @@ offset_right = 50.0
 offset_bottom = 99.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_11" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -185,10 +186,10 @@ offset_right = 95.0
 offset_bottom = 99.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "F"
 
 [node name="letra_12" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -199,10 +200,10 @@ offset_right = 140.0
 offset_bottom = 99.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_13" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -213,11 +214,11 @@ offset_right = 185.0
 offset_bottom = 99.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "O"
 
 [node name="letra_14" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -227,11 +228,11 @@ offset_right = 230.0
 offset_bottom = 99.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "P"
 
 [node name="letra_15" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -241,10 +242,10 @@ offset_right = 275.0
 offset_bottom = 99.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_16" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -255,11 +256,11 @@ offset_right = 320.0
 offset_bottom = 99.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "J"
 
 [node name="letra_17" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -269,10 +270,10 @@ offset_right = 365.0
 offset_bottom = 99.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "E"
 
 [node name="letra_18" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -283,10 +284,10 @@ offset_right = 410.0
 offset_bottom = 99.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "O"
 
 [node name="letra_19" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -297,10 +298,10 @@ offset_right = 50.0
 offset_bottom = 146.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "R"
 
 [node name="letra_20" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -311,10 +312,10 @@ offset_right = 95.0
 offset_bottom = 146.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "E"
 
 [node name="letra_21" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -325,10 +326,10 @@ offset_right = 140.0
 offset_bottom = 146.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "U"
 
 [node name="letra_22" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -339,10 +340,10 @@ offset_right = 185.0
 offset_bottom = 146.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "S"
 
 [node name="letra_23" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -353,10 +354,10 @@ offset_right = 230.0
 offset_bottom = 146.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_24" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -367,10 +368,10 @@ offset_right = 275.0
 offset_bottom = 146.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "R"
 
 [node name="letra_25" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -381,10 +382,10 @@ offset_right = 320.0
 offset_bottom = 146.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_26" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -395,10 +396,10 @@ offset_right = 365.0
 offset_bottom = 146.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "D"
 
 [node name="letra_27" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -409,10 +410,10 @@ offset_right = 410.0
 offset_bottom = 146.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "N"
 
 [node name="letra_28" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -423,11 +424,11 @@ offset_right = 50.0
 offset_bottom = 193.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "N"
 
 [node name="letra_29" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -437,10 +438,10 @@ offset_right = 95.0
 offset_bottom = 193.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_30" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -451,10 +452,10 @@ offset_right = 140.0
 offset_bottom = 193.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_31" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -465,10 +466,10 @@ offset_right = 185.0
 offset_bottom = 193.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "T"
 
 [node name="letra_32" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -479,10 +480,10 @@ offset_right = 230.0
 offset_bottom = 193.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_33" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -493,10 +494,10 @@ offset_right = 275.0
 offset_bottom = 193.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_34" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -507,11 +508,11 @@ offset_right = 320.0
 offset_bottom = 193.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "T"
 
 [node name="letra_35" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -521,10 +522,10 @@ offset_right = 365.0
 offset_bottom = 193.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "U"
 
 [node name="letra_36" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -535,10 +536,10 @@ offset_right = 410.0
 offset_bottom = 193.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "T"
 
 [node name="letra_37" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -549,10 +550,10 @@ offset_right = 50.0
 offset_bottom = 240.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_38" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -563,10 +564,10 @@ offset_right = 95.0
 offset_bottom = 240.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "S"
 
 [node name="letra_39" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -577,10 +578,10 @@ offset_right = 140.0
 offset_bottom = 240.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_40" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -591,10 +592,10 @@ offset_right = 185.0
 offset_bottom = 240.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_41" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -605,10 +606,10 @@ offset_right = 230.0
 offset_bottom = 240.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "U"
 
 [node name="letra_42" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -619,10 +620,10 @@ offset_right = 275.0
 offset_bottom = 240.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_43" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -633,10 +634,10 @@ offset_right = 320.0
 offset_bottom = 240.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_44" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -647,10 +648,10 @@ offset_right = 365.0
 offset_bottom = 240.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "C"
 
 [node name="letra_45" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -661,10 +662,10 @@ offset_right = 410.0
 offset_bottom = 240.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_46" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -675,11 +676,11 @@ offset_right = 50.0
 offset_bottom = 287.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "V"
 
 [node name="letra_47" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -689,10 +690,10 @@ offset_right = 95.0
 offset_bottom = 287.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "O"
 
 [node name="letra_48" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -703,11 +704,11 @@ offset_right = 140.0
 offset_bottom = 287.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "I"
 
 [node name="letra_49" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -717,11 +718,11 @@ offset_right = 185.0
 offset_bottom = 287.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "Q"
 
 [node name="letra_50" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -731,11 +732,11 @@ offset_right = 230.0
 offset_bottom = 287.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "J"
 
 [node name="letra_51" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -745,10 +746,10 @@ offset_right = 275.0
 offset_bottom = 287.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "R"
 
 [node name="letra_52" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -759,11 +760,11 @@ offset_right = 320.0
 offset_bottom = 287.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "R"
 
 [node name="letra_53" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -773,10 +774,10 @@ offset_right = 365.0
 offset_bottom = 287.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "I"
 
 [node name="letra_54" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -787,10 +788,10 @@ offset_right = 410.0
 offset_bottom = 287.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "M"
 
 [node name="letra_55" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -801,11 +802,11 @@ offset_right = 50.0
 offset_bottom = 334.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "H"
 
 [node name="letra_56" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -815,10 +816,10 @@ offset_right = 95.0
 offset_bottom = 334.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "H"
 
 [node name="letra_57" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -829,10 +830,10 @@ offset_right = 140.0
 offset_bottom = 334.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_58" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -843,10 +844,10 @@ offset_right = 185.0
 offset_bottom = 334.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "S"
 
 [node name="letra_59" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -857,10 +858,10 @@ offset_right = 230.0
 offset_bottom = 334.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_60" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -871,10 +872,10 @@ offset_right = 275.0
 offset_bottom = 334.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_61" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -885,10 +886,10 @@ offset_right = 320.0
 offset_bottom = 334.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "O"
 
 [node name="letra_62" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -899,10 +900,10 @@ offset_right = 365.0
 offset_bottom = 334.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "R"
 
 [node name="letra_63" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -913,10 +914,10 @@ offset_right = 410.0
 offset_bottom = 334.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "I"
 
 [node name="letra_64" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -927,11 +928,11 @@ offset_right = 50.0
 offset_bottom = 381.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "O"
 
 [node name="letra_65" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -941,10 +942,10 @@ offset_right = 95.0
 offset_bottom = 381.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "C"
 
 [node name="letra_66" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -955,10 +956,10 @@ offset_right = 140.0
 offset_bottom = 381.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_67" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -969,10 +970,10 @@ offset_right = 185.0
 offset_bottom = 381.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_68" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -983,11 +984,11 @@ offset_right = 230.0
 offset_bottom = 381.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "F"
 
 [node name="letra_69" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -997,11 +998,11 @@ offset_right = 275.0
 offset_bottom = 381.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "G"
 
 [node name="letra_70" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -1011,10 +1012,10 @@ offset_right = 320.0
 offset_bottom = 381.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_71" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1025,11 +1026,11 @@ offset_right = 365.0
 offset_bottom = 381.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "E"
 
 [node name="letra_72" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -1039,10 +1040,10 @@ offset_right = 410.0
 offset_bottom = 381.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "N"
 
 [node name="letra_73" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1053,11 +1054,11 @@ offset_right = 50.0
 offset_bottom = 428.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "Q"
 
 [node name="letra_74" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -1067,10 +1068,10 @@ offset_right = 95.0
 offset_bottom = 428.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "E"
 
 [node name="letra_75" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1081,10 +1082,10 @@ offset_right = 140.0
 offset_bottom = 428.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "P"
 
 [node name="letra_76" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1095,10 +1096,10 @@ offset_right = 185.0
 offset_bottom = 428.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "L"
 
 [node name="letra_77" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1109,10 +1110,10 @@ offset_right = 230.0
 offset_bottom = 428.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_78" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1123,10 +1124,10 @@ offset_right = 275.0
 offset_bottom = 428.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "N"
 
 [node name="letra_79" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1137,10 +1138,10 @@ offset_right = 320.0
 offset_bottom = 428.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "E"
 
 [node name="letra_80" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1151,10 +1152,10 @@ offset_right = 365.0
 offset_bottom = 428.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "T"
 
 [node name="letra_81" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1165,10 +1166,10 @@ offset_right = 410.0
 offset_bottom = 428.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_82" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1179,11 +1180,11 @@ offset_right = 50.0
 offset_bottom = 475.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "R"
 
 [node name="letra_83" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -1193,10 +1194,10 @@ offset_right = 95.0
 offset_bottom = 475.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "S"
 
 [node name="letra_84" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1207,10 +1208,10 @@ offset_right = 140.0
 offset_bottom = 475.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_85" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1221,10 +1222,10 @@ offset_right = 185.0
 offset_bottom = 475.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "U"
 
 [node name="letra_86" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1235,10 +1236,10 @@ offset_right = 230.0
 offset_bottom = 475.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_87" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1249,11 +1250,12 @@ offset_right = 275.0
 offset_bottom = 475.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "X
+"
 
 [node name="letra_88" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -1263,10 +1265,10 @@ offset_right = 320.0
 offset_bottom = 475.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_89" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1277,11 +1279,11 @@ offset_right = 365.0
 offset_bottom = 475.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "Z"
 
 [node name="letra_90" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -1291,10 +1293,10 @@ offset_right = 410.0
 offset_bottom = 475.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "C"
 
 [node name="letra_91" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1305,10 +1307,10 @@ offset_right = 50.0
 offset_bottom = 522.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_92" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1319,10 +1321,10 @@ offset_right = 95.0
 offset_bottom = 522.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "E"
 
 [node name="letra_93" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1333,10 +1335,10 @@ offset_right = 140.0
 offset_bottom = 522.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_94" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1347,10 +1349,10 @@ offset_right = 185.0
 offset_bottom = 522.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "D"
 
 [node name="letra_95" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1361,10 +1363,10 @@ offset_right = 230.0
 offset_bottom = 522.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_96" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1375,11 +1377,11 @@ offset_right = 275.0
 offset_bottom = 522.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "D"
 
 [node name="letra_97" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -1389,11 +1391,11 @@ offset_right = 320.0
 offset_bottom = 522.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "Y"
 
 [node name="letra_98" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -1403,10 +1405,10 @@ offset_right = 365.0
 offset_bottom = 522.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_99" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1417,10 +1419,10 @@ offset_right = 410.0
 offset_bottom = 522.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "I"
 
 [node name="letra_100" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1431,11 +1433,11 @@ offset_right = 50.0
 offset_bottom = 569.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "T"
 
 [node name="letra_101" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -1445,10 +1447,10 @@ offset_right = 95.0
 offset_bottom = 569.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "D"
 
 [node name="letra_102" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1459,11 +1461,11 @@ offset_right = 140.0
 offset_bottom = 569.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "Q"
 
 [node name="letra_103" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -1473,11 +1475,11 @@ offset_right = 185.0
 offset_bottom = 569.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "L"
 
 [node name="letra_104" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -1487,11 +1489,11 @@ offset_right = 230.0
 offset_bottom = 569.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "P"
 
 [node name="letra_105" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -1501,10 +1503,10 @@ offset_right = 275.0
 offset_bottom = 569.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_106" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1515,11 +1517,11 @@ offset_right = 320.0
 offset_bottom = 569.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "X"
 
 [node name="letra_107" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -1529,11 +1531,11 @@ offset_right = 365.0
 offset_bottom = 569.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
-text = "A"
+theme_override_styles/focus = ExtResource("1_ei6wy")
+text = "Z"
 
 [node name="letra_108" type="Button" parent="fondo2" groups=["letter_buttons"]]
 layout_mode = 0
@@ -1543,10 +1545,10 @@ offset_right = 410.0
 offset_bottom = 569.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "O"
 
 [node name="letra_109" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1557,10 +1559,10 @@ offset_right = 50.0
 offset_bottom = 616.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "R"
 
 [node name="letra_110" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1571,10 +1573,10 @@ offset_right = 95.0
 offset_bottom = 616.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "E"
 
 [node name="letra_111" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1585,10 +1587,10 @@ offset_right = 140.0
 offset_bottom = 616.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "C"
 
 [node name="letra_112" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1599,10 +1601,10 @@ offset_right = 185.0
 offset_bottom = 616.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "I"
 
 [node name="letra_113" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1613,10 +1615,10 @@ offset_right = 230.0
 offset_bottom = 616.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "C"
 
 [node name="letra_114" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1627,10 +1629,10 @@ offset_right = 275.0
 offset_bottom = 616.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "L"
 
 [node name="letra_115" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1641,10 +1643,10 @@ offset_right = 320.0
 offset_bottom = 616.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "A"
 
 [node name="letra_116" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1655,10 +1657,10 @@ offset_right = 365.0
 offset_bottom = 616.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "R"
 
 [node name="letra_117" type="Button" parent="fondo2" groups=["letter_buttons"]]
@@ -1669,10 +1671,10 @@ offset_right = 410.0
 offset_bottom = 616.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-theme_override_styles/focus = ExtResource("1_ei6wy")
+theme_override_styles/normal = ExtResource("3_cgths")
 theme_override_styles/hover = ExtResource("1_ei6wy")
 theme_override_styles/pressed = ExtResource("1_ei6wy")
-theme_override_styles/normal = ExtResource("3_cgths")
+theme_override_styles/focus = ExtResource("1_ei6wy")
 text = "N"
 
 [node name="palabras" type="VBoxContainer" parent="."]
@@ -1727,3 +1729,6 @@ uppercase = true
 position = Vector2(139.125, 815.875)
 scale = Vector2(0.4525, 0.4525)
 texture = ExtResource("6_ot7op")
+
+[node name="ventana_felicidades" parent="." instance=ExtResource("7_ame3x")]
+visible = false
