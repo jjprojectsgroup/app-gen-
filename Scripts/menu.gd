@@ -24,4 +24,4 @@ func _on_btndatos_pressed() -> void:
 
 
 func _on_btnsalir_pressed() -> void:
-	Trans.change_scene('res://Escenas/videos.tscn')
+	get_tree().quit();

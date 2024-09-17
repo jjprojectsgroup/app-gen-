@@ -5,9 +5,9 @@ extends Node2D
 func _ready() -> void:
 	var name = get_current_scene_name()
 	if name == 'registros':
-		$Label/Label.text = 'Registros'
+		$Label/Label.text = 'REGISTROS'
 	else :
-		$Label/Label.text = 'Grado '+ Global.nivel
+		$Label/Label.text = 'GRADO '+ Global.nivel
 	pass # Replace with function body.
 
 

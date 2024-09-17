@@ -73,9 +73,9 @@ func update_student_data(registro: Control, student: Dictionary):
 	# Actualiza múltiples campos del nodo 'registro' con los datos del estudiante
 	registro.get_node("Control/nombre").text = student.name
 	registro.get_node("Control/grado").text = student.grado
-	if  student.manualidad_1: 
+	if  student.actividad_1: 
 		registro.get_node("Control/Control1/actividad1").text = 'COMPLETADO'
-	if  student.manualidad_2: 
+	if  student.actividad_2:
 		registro.get_node("Control/Control2/actividad2").text = 'COMPLETADO' # Datos de respuestas
 
 	var porcentaje = calculate_completion(student)

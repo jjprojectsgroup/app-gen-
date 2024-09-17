@@ -29,10 +29,10 @@ func _on_btnactividad_1_pressed() -> void:
 
 
 func _on_btnactividad_2_pressed() -> void:
-	print('actividad que solo muestra una imagen')
+	
 	#Global.numero_video = '4';
-	#DataManager.update_answer(true, 'actividad_2')
-	#Trans.change_scene('res://Escenas/videos.tscn')
+	DataManager.update_answer(true, 'actividad_2')
+	Trans.change_scene('res://Escenas/actividad_nivel2.tscn')
 
 
 func _on_btnmanualidad_1_pressed(numero: String) -> void:
