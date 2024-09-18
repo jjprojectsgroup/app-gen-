@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cnsskt2dhlx1k"]
+[gd_scene load_steps=12 format=3 uid="uid://cnsskt2dhlx1k"]
 
 [ext_resource type="Script" path="res://Scripts/pregunta_completa.gd" id="1_f8jgy"]
 [ext_resource type="Texture2D" uid="uid://gl8sus00ymdj" path="res://img/fondo_principal3.jpg" id="1_ji7k7"]
@@ -7,6 +7,8 @@
 [ext_resource type="FontFile" uid="uid://doo5wq3dunosb" path="res://font/SofadiOne-Regular.ttf" id="4_qiomp"]
 [ext_resource type="StyleBox" uid="uid://2jtjkqs8fwxq" path="res://styles/btn_normal.tres" id="5_mejv2"]
 [ext_resource type="StyleBox" uid="uid://h6bgr3hde3fm" path="res://styles/btn_hover.tres" id="6_07itb"]
+[ext_resource type="Texture2D" uid="uid://bxariys7jocnk" path="res://img/sol.png" id="8_bceyr"]
+[ext_resource type="PackedScene" uid="uid://dpmns86toab2w" path="res://componentes/ventana_felicidades.tscn" id="9_r643r"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_16qs3"]
 bg_color = Color(1, 1, 0.960784, 1)
@@ -119,6 +121,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_qiomp")
 theme_override_font_sizes/font_size = 22
 theme_override_styles/normal = SubResource("StyleBoxFlat_16qs3")
+text = "Doy calorcito, soy muy redondo,salgo tempranito, y por la tarde me escondo."
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
@@ -188,11 +191,24 @@ theme_override_colors/caret_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_qiomp")
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_r2q8s")
+text = "a"
 placeholder_text = "
 "
 autowrap_mode = 1
 
 [node name="barra_titulo" parent="." instance=ExtResource("2_pp13u")]
+
+[node name="Sol" type="Sprite2D" parent="."]
+modulate = Color(0.0235294, 0.0235294, 0.0235294, 1)
+position = Vector2(216.414, 355.625)
+scale = Vector2(0.551031, 0.551031)
+texture = ExtResource("8_bceyr")
+
+[node name="ventana_felicidades" parent="." instance=ExtResource("9_r643r")]
+visible = false
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
 
 [connection signal="pressed" from="Control/fondo_respuesta/Button" to="." method="_on_button_pressed"]
 [connection signal="text_changed" from="Control/respuesta2" to="." method="_on_respuesta_text_changed" binds= ["2"]]

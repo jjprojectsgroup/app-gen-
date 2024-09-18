@@ -20,11 +20,18 @@ func _on_respuesta_text_changed(numero: String) -> void:
 			get_node('Control/respuesta'+ str(siguiente)).grab_focus()
 		return
 
+func felicitaciones():
+		$ventana_felicidades.visible = true
+		$Timer.stop()
 
 func _on_button_pressed() -> void:
 	if $Control/respuesta1.text.to_upper() == 'S' && $Control/respuesta2.text.to_upper() == 'O' && $Control/respuesta3.text.to_upper() == 'L': 
 		print('respuesta corrrecta')
+		$Sol.modulate = Color('ffffff')
 		DataManager.update_answer(true, 'actividad_1')
+		$Timer.connect("timeout", felicitaciones)
+		$Timer.start()
+
 	else:
 		print('respuesta incorrrecta')
 		
