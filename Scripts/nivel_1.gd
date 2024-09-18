@@ -29,7 +29,7 @@ func _on_btnactividad_1_pressed() -> void:
 
 func _on_btnactividad_2_pressed() -> void:
 	$boton.play();
-	Global.numero_video = '4';
+	Global.numero_video = '7';
 	DataManager.update_answer(true, 'actividad_2')
 	Trans.change_scene('res://Escenas/videos.tscn')
 
