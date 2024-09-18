@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cnmceg2ijjrk0"]
+[gd_scene load_steps=13 format=3 uid="uid://cnmceg2ijjrk0"]
 
 [ext_resource type="Script" path="res://Scripts/videos.gd" id="1_rmont"]
 [ext_resource type="Texture2D" uid="uid://cu7elw6do6j4l" path="res://img/adelantar.png" id="2_3wox0"]
@@ -23,6 +23,9 @@ bg_color = Color(0.812436, 0.526776, 0.23559, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7827o"]
 bg_color = Color(0.148836, 0.668048, 0.769001, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kmi7j"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="videos" type="Node2D"]
 script = ExtResource("1_rmont")
@@ -64,11 +67,11 @@ offset_bottom = 569.0
 grow_horizontal = 0
 grow_vertical = 2
 rotation = 4.71239
-theme_override_styles/normal = SubResource("StyleBoxFlat_oc727")
+theme_override_styles/focus = SubResource("StyleBoxFlat_oc727")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_oc727")
 theme_override_styles/hover = SubResource("StyleBoxFlat_oc727")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_oc727")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_oc727")
-theme_override_styles/focus = SubResource("StyleBoxFlat_oc727")
+theme_override_styles/normal = SubResource("StyleBoxFlat_oc727")
 icon = ExtResource("2_y2ua3")
 flat = true
 expand_icon = true
@@ -79,11 +82,11 @@ offset_top = 271.0
 offset_right = 408.0
 offset_bottom = 331.0
 rotation = 4.71239
-theme_override_styles/normal = SubResource("StyleBoxFlat_2b56g")
+theme_override_styles/focus = SubResource("StyleBoxFlat_2b56g")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_2b56g")
 theme_override_styles/hover = SubResource("StyleBoxFlat_2b56g")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_2b56g")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_2b56g")
-theme_override_styles/focus = SubResource("StyleBoxFlat_2b56g")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2b56g")
 icon = ExtResource("2_3wox0")
 flat = true
 expand_icon = true
@@ -94,11 +97,11 @@ offset_top = 658.0
 offset_right = 467.0
 offset_bottom = 718.0
 rotation = 1.5708
-theme_override_styles/normal = SubResource("StyleBoxFlat_5qsy5")
+theme_override_styles/focus = SubResource("StyleBoxFlat_5qsy5")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_5qsy5")
 theme_override_styles/hover = SubResource("StyleBoxFlat_5qsy5")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_5qsy5")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_5qsy5")
-theme_override_styles/focus = SubResource("StyleBoxFlat_5qsy5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_5qsy5")
 icon = ExtResource("2_3wox0")
 flat = true
 icon_alignment = 1
@@ -112,7 +115,6 @@ offset_bottom = 954.0
 rotation = 4.71239
 theme_override_styles/background = SubResource("StyleBoxFlat_180gs")
 theme_override_styles/fill = SubResource("StyleBoxFlat_7827o")
-value = 50.0
 show_percentage = false
 
 [node name="Button" type="Button" parent="."]
@@ -121,6 +123,17 @@ offset_top = 912.0
 offset_right = 77.0
 offset_bottom = 980.0
 rotation = 4.71239
+theme_override_styles/focus = SubResource("StyleBoxFlat_kmi7j")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_kmi7j")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_kmi7j")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_kmi7j")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_kmi7j")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_kmi7j")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kmi7j")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_kmi7j")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kmi7j")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_kmi7j")
+theme_override_styles/normal = SubResource("StyleBoxFlat_kmi7j")
 icon = ExtResource("4_3v2im")
 flat = true
 expand_icon = true

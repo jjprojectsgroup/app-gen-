@@ -16,7 +16,7 @@ func load_data():
 	if !students.is_empty():
 		students.reverse()
 		show_data(students)
-	else:
+	#else:
 		#print('No hay registros')
 
 

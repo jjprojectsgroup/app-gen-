@@ -68,10 +68,10 @@ offset_bottom = 17.0
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_0fffw")
 theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = ExtResource("4_xt765")
+theme_override_styles/focus = ExtResource("5_ppfvt")
 theme_override_styles/hover = ExtResource("5_ppfvt")
 theme_override_styles/pressed = ExtResource("5_ppfvt")
-theme_override_styles/focus = ExtResource("5_ppfvt")
+theme_override_styles/normal = ExtResource("4_xt765")
 text = "Pregunta"
 
 [node name="btnpregunta_2" type="Button" parent="Control/Control"]
@@ -88,10 +88,10 @@ grow_horizontal = 0
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_0fffw")
 theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = ExtResource("4_xt765")
+theme_override_styles/focus = ExtResource("5_ppfvt")
 theme_override_styles/hover = ExtResource("5_ppfvt")
 theme_override_styles/pressed = ExtResource("5_ppfvt")
-theme_override_styles/focus = ExtResource("5_ppfvt")
+theme_override_styles/normal = ExtResource("4_xt765")
 text = "Pregunta"
 
 [node name="Control2" type="Control" parent="Control"]
@@ -119,10 +119,10 @@ offset_bottom = 17.0
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_0fffw")
 theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = ExtResource("4_xt765")
+theme_override_styles/focus = ExtResource("5_ppfvt")
 theme_override_styles/hover = ExtResource("5_ppfvt")
 theme_override_styles/pressed = ExtResource("5_ppfvt")
-theme_override_styles/focus = ExtResource("5_ppfvt")
+theme_override_styles/normal = ExtResource("4_xt765")
 text = "Manualidad"
 
 [node name="btnmanualidad_2" type="Button" parent="Control/Control2"]
@@ -139,10 +139,10 @@ grow_horizontal = 0
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_0fffw")
 theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = ExtResource("4_xt765")
+theme_override_styles/focus = ExtResource("5_ppfvt")
 theme_override_styles/hover = ExtResource("5_ppfvt")
 theme_override_styles/pressed = ExtResource("5_ppfvt")
-theme_override_styles/focus = ExtResource("5_ppfvt")
+theme_override_styles/normal = ExtResource("4_xt765")
 text = "Manualidad"
 
 [node name="Control3" type="Control" parent="Control"]
@@ -170,10 +170,10 @@ offset_bottom = 17.0
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_0fffw")
 theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = ExtResource("4_xt765")
+theme_override_styles/focus = ExtResource("5_ppfvt")
 theme_override_styles/hover = ExtResource("5_ppfvt")
 theme_override_styles/pressed = ExtResource("5_ppfvt")
-theme_override_styles/focus = ExtResource("5_ppfvt")
+theme_override_styles/normal = ExtResource("4_xt765")
 text = "Actividad"
 
 [node name="btnactividad_2" type="Button" parent="Control/Control3"]
@@ -190,10 +190,10 @@ grow_horizontal = 0
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_0fffw")
 theme_override_font_sizes/font_size = 25
-theme_override_styles/normal = ExtResource("4_xt765")
+theme_override_styles/focus = ExtResource("5_ppfvt")
 theme_override_styles/hover = ExtResource("5_ppfvt")
 theme_override_styles/pressed = ExtResource("5_ppfvt")
-theme_override_styles/focus = ExtResource("5_ppfvt")
+theme_override_styles/normal = ExtResource("4_xt765")
 text = "Actividad"
 
 [node name="Nube" type="Sprite2D" parent="Control"]

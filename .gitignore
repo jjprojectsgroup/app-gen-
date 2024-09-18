@@ -1,3 +1,5 @@
 # Godot 4+ specific ignores
 .godot/
 Gen.apk
+Gen.apk
+Gen.apk.idsig

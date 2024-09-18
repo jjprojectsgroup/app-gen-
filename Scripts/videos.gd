@@ -3,45 +3,63 @@ var icon_play = preload("res://img/play.png")
 var icon_pausa = preload("res://img/pausa.png")
 var seek_time = 10; # Cuánto adelantar o retroceder (en segundos)
 # Crea una instancia de FFmpegVideoStream
-var ffmpeg_video_stream = FFmpegVideoStream.new() # se declara el plugin de reproducción de video
+var ffmpeg_video_stream = FFmpegVideoStream.new() # se declara el plugin de reproducción de video para windows
 # Variable para saber si el usuario está arrastrando
 #var is_dragging = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	#var ruta_video = 'res://video/video-'+Global.numero_video+'.mov'
-	#if Global.numero_video == '5' || Global.numero_video == '6':
-		#ruta_video = 'res://video/video-'+Global.numero_video+'.mp4'
 	#ffmpeg_video_stream.file = ruta_video
 	#$reproductor.set_stream(ffmpeg_video_stream)
 	## Configura la duración máxima de la barra de progreso
 	#$progressbar.min_value = 0
 	#$progressbar.max_value = $reproductor.get_stream_length()
 	
-	var ruta_video = 'res://video/video-'+Global.numero_video+'.mov'
-	if OS.get_name() == "Android":
-   		 # Código específico para Android
-		print("Ejecutándose en Android")
-		ruta_video = load('res://video/video-'+Global.numero_video+'.ogv') 
-		print("Ejecutándose en Android")
-		$reproductor.set_stream(ruta_video)
-		$reproductor.size.y = 432
-		$btnplaypause.position.x = 362
+	#if OS.get_name() == "Android":
+   		 ## Código específico para Android
+		#print("Ejecutándose en Android")
+		#ruta_video = load('res://video/video-'+Global.numero_video+'.ogv') 
+		#print("Ejecutándose en Android")
+		#$reproductor.set_stream(ruta_video)
+		#$reproductor.size.y = 432
+		#$btnplaypause.position.x = 362
 		#$progressbar.visible = false
-		$btnback.visible = false
-		$btnnext.visible = false
-	elif OS.get_name() == "Windows":
-		# Código específico para Windows
-		print("Ejecutándose en Windows")
-		ffmpeg_video_stream.file = ruta_video
-		$reproductor.set_stream(ffmpeg_video_stream)
-		$progressbar.min_value = 0
-		$progressbar.max_value = $reproductor.get_stream_length()
+		#$btnback.visible = false
+		#$btnnext.visible = false
+	#elif OS.get_name() == "Windows":
+		## Código específico para Windows
+		#print("Ejecutándose en Windows")
+		#ffmpeg_video_stream.file = ruta_video
+		#$reproductor.set_stream(ffmpeg_video_stream)
+		#$progressbar.min_value = 0
+		#$progressbar.max_value = $reproductor.get_stream_length()
+		
+		
+	# Código específico para Windows
+	print("Ejecutándose en Windows")
+	var ruta_video = 'res://video/video-'+Global.numero_video+'.mp4'
+	ffmpeg_video_stream.file = ruta_video
+	$reproductor.set_stream(ffmpeg_video_stream)
+	$progressbar.min_value = 0
+	$progressbar.max_value = $reproductor.get_stream_length()
+
+	#print("Ejecutándose en Android")
+	#var ruta_video = load('res://video/video-'+Global.numero_video+'.ogv') 
+	#$reproductor.set_stream(ruta_video)
+	#$reproductor.size.y = 432
+	#$btnplaypause.position.x = 362
+	#$progressbar.visible = false
+	#$btnback.visible = false
+	#$btnnext.visible = false
+
+
 	$reproductor.play()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	pass
 	if $reproductor.is_playing():
 		var current_position = $reproductor.get_stream_position()
 		$progressbar.value = current_position
@@ -56,6 +74,7 @@ func _on_btnplaypause_pressed() -> void:
 
 
 func _on_btnnext_pressed() -> void:
+	pass
 	if $reproductor.is_playing():
 		var new_position = $reproductor.get_stream_position() + seek_time;
 		if new_position < $reproductor.get_stream_length():
@@ -63,6 +82,7 @@ func _on_btnnext_pressed() -> void:
 
 
 func _on_btnback_pressed() -> void:
+	pass
 	var new_position = $reproductor.get_stream_position() - seek_time
 	# Asegurarse de no retroceder más allá del principio del video
 	if new_position > 0:
@@ -72,10 +92,12 @@ func _on_btnback_pressed() -> void:
 
 
 func _on_reproductor_finished() -> void:
+	pass
 	$progressbar.value = 0;
 
 
 func _on_progressbar_gui_input(event: InputEvent) -> void:
+	pass
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		# Obtener el tamaño de la ProgressBar y la posición del clic
 		var progress_ratio = event.position.x / $progressbar.size.x

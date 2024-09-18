@@ -8,7 +8,7 @@ func _ready() -> void:
 	if name == 'registros':
 		$Label/Label.text = 'REGISTROS'
 	else :
-		$Label/Label.text = 'GRADO '+ Global.nivel
+		$Label/Label.text = 'GRADO '+ Global.grado_jugador
 	pass # Replace with function body.
 
 
