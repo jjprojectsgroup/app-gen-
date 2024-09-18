@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://dyr01q53q6kof"]
+[gd_scene load_steps=8 format=3 uid="uid://dyr01q53q6kof"]
 
 [ext_resource type="Script" path="res://Scripts/tarjeta_mostrar.gd" id="1_tc78q"]
 [ext_resource type="FontFile" uid="uid://doo5wq3dunosb" path="res://font/SofadiOne-Regular.ttf" id="1_u4j0m"]
 [ext_resource type="StyleBox" uid="uid://2jtjkqs8fwxq" path="res://styles/btn_normal.tres" id="2_psfdw"]
 [ext_resource type="StyleBox" uid="uid://h6bgr3hde3fm" path="res://styles/btn_hover.tres" id="3_dj6pl"]
+[ext_resource type="AudioStream" uid="uid://b5y3fetlrborw" path="res://sonido/boton.mp3" id="5_f4f7u"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_odjt1"]
 bg_color = Color(1, 1, 1, 1)
@@ -197,5 +198,8 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_arb2w")
 theme_override_styles/read_only = SubResource("StyleBoxFlat_arb2w")
 wrap_mode = 1
 autowrap_mode = 1
+
+[node name="boton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_f4f7u")
 
 [connection signal="pressed" from="Label/Control/Button" to="." method="_on_button_pressed"]

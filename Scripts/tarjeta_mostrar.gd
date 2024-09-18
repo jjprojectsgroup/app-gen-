@@ -12,6 +12,7 @@ func _process(delta: float) -> void:
 
 
 func _on_button_pressed() -> void:
+	$boton.play();
 	queue_free();
 
 func get_data(student: Dictionary):

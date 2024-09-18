@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://btm0qwhybjg6k"]
+[gd_scene load_steps=11 format=3 uid="uid://btm0qwhybjg6k"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_sal6j"]
 [ext_resource type="Texture2D" uid="uid://bx7a1k1rlle2p" path="res://img/fondo_principal2.jpg" id="2_wtuys"]
@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://bw6y3g3haw8kw" path="res://componentes/btnsalir.tscn" id="5_x3cgw"]
 [ext_resource type="PackedScene" uid="uid://d2jm0tsmdsfgo" path="res://componentes/btndatos.tscn" id="6_jpomd"]
 [ext_resource type="FontFile" uid="uid://ysv0ho3gdyl0" path="res://font/Magic Sound.ttf" id="7_18myr"]
+[ext_resource type="AudioStream" uid="uid://b5y3fetlrborw" path="res://sonido/boton.mp3" id="8_wcoud"]
+[ext_resource type="AudioStream" uid="uid://x1nauk5p4jxp" path="res://sonido/hambiental.mp3" id="9_c851n"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fiheo"]
 bg_color = Color(0.148096, 0.547012, 0.752326, 1)
@@ -131,6 +133,14 @@ text = "+
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="boton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_wcoud")
+
+[node name="hambiente" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_c851n")
+autoplay = true
+
 [connection signal="pressed" from="Control/btnempezar" to="." method="registrar"]
 [connection signal="pressed" from="Control/btnsalir" to="." method="_on_btnsalir_pressed"]
 [connection signal="pressed" from="Control/btndatos" to="." method="_on_btndatos_pressed"]
+[connection signal="finished" from="hambiente" to="." method="_on_hambiente_finished"]

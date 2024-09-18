@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://cnmceg2ijjrk0"]
+[gd_scene load_steps=12 format=3 uid="uid://cnmceg2ijjrk0"]
 
 [ext_resource type="Script" path="res://Scripts/videos.gd" id="1_rmont"]
 [ext_resource type="Texture2D" uid="uid://cu7elw6do6j4l" path="res://img/adelantar.png" id="2_3wox0"]
 [ext_resource type="Texture2D" uid="uid://blgrivcjk3fax" path="res://img/pausa.png" id="2_y2ua3"]
 [ext_resource type="Texture2D" uid="uid://dctsfyrj3rel8" path="res://img/atras.png" id="4_3v2im"]
+[ext_resource type="AudioStream" uid="uid://b5y3fetlrborw" path="res://sonido/boton.mp3" id="5_qsrs8"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_glhm5"]
 bg_color = Color(0.613349, 0.432467, 0.0603764, 1)
@@ -63,11 +64,11 @@ offset_bottom = 569.0
 grow_horizontal = 0
 grow_vertical = 2
 rotation = 4.71239
-theme_override_styles/focus = SubResource("StyleBoxFlat_oc727")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_oc727")
+theme_override_styles/normal = SubResource("StyleBoxFlat_oc727")
 theme_override_styles/hover = SubResource("StyleBoxFlat_oc727")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_oc727")
-theme_override_styles/normal = SubResource("StyleBoxFlat_oc727")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_oc727")
+theme_override_styles/focus = SubResource("StyleBoxFlat_oc727")
 icon = ExtResource("2_y2ua3")
 flat = true
 expand_icon = true
@@ -78,11 +79,11 @@ offset_top = 271.0
 offset_right = 408.0
 offset_bottom = 331.0
 rotation = 4.71239
-theme_override_styles/focus = SubResource("StyleBoxFlat_2b56g")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_2b56g")
+theme_override_styles/normal = SubResource("StyleBoxFlat_2b56g")
 theme_override_styles/hover = SubResource("StyleBoxFlat_2b56g")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_2b56g")
-theme_override_styles/normal = SubResource("StyleBoxFlat_2b56g")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_2b56g")
+theme_override_styles/focus = SubResource("StyleBoxFlat_2b56g")
 icon = ExtResource("2_3wox0")
 flat = true
 expand_icon = true
@@ -93,11 +94,11 @@ offset_top = 658.0
 offset_right = 467.0
 offset_bottom = 718.0
 rotation = 1.5708
-theme_override_styles/focus = SubResource("StyleBoxFlat_5qsy5")
-theme_override_styles/disabled = SubResource("StyleBoxFlat_5qsy5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_5qsy5")
 theme_override_styles/hover = SubResource("StyleBoxFlat_5qsy5")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_5qsy5")
-theme_override_styles/normal = SubResource("StyleBoxFlat_5qsy5")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_5qsy5")
+theme_override_styles/focus = SubResource("StyleBoxFlat_5qsy5")
 icon = ExtResource("2_3wox0")
 flat = true
 icon_alignment = 1
@@ -123,6 +124,9 @@ rotation = 4.71239
 icon = ExtResource("4_3v2im")
 flat = true
 expand_icon = true
+
+[node name="boton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_qsrs8")
 
 [connection signal="finished" from="reproductor" to="." method="_on_reproductor_finished"]
 [connection signal="pressed" from="btnplaypause" to="." method="_on_btnplaypause_pressed"]

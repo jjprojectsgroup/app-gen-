@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://duwrxf2gn45do"]
+[gd_scene load_steps=13 format=3 uid="uid://duwrxf2gn45do"]
 
 [ext_resource type="StyleBox" uid="uid://bd8obu1box66q" path="res://styles/btn_letras.tres" id="1_ei6wy"]
 [ext_resource type="Script" path="res://Scripts/sopa_letras.gd" id="1_wg2qn"]
@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://dxmaohffffinq" path="res://componentes/barra_titulo.tscn" id="4_rc5m7"]
 [ext_resource type="Texture2D" uid="uid://dw2ag3riy221v" path="res://img/person_idea.png" id="6_ot7op"]
 [ext_resource type="PackedScene" uid="uid://dpmns86toab2w" path="res://componentes/ventana_felicidades.tscn" id="7_ame3x"]
+[ext_resource type="AudioStream" uid="uid://cdv3d5ajahl4m" path="res://sonido/click_letras.mp3" id="8_m3enc"]
+[ext_resource type="AudioStream" uid="uid://csbx1opq8s251" path="res://sonido/check.mp3" id="9_lkd5e"]
+[ext_resource type="AudioStream" uid="uid://x1nauk5p4jxp" path="res://sonido/hambiental.mp3" id="10_q1px1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jihko"]
 bg_color = Color(0.513726, 0.909804, 0.941176, 1)
@@ -1732,3 +1735,15 @@ texture = ExtResource("6_ot7op")
 
 [node name="ventana_felicidades" parent="." instance=ExtResource("7_ame3x")]
 visible = false
+
+[node name="boton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_m3enc")
+
+[node name="check" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_lkd5e")
+
+[node name="hambiente" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_q1px1")
+autoplay = true
+
+[connection signal="finished" from="hambiente" to="." method="_on_hambiente_finished"]

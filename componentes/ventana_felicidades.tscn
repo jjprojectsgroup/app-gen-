@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://dpmns86toab2w"]
+[gd_scene load_steps=8 format=3 uid="uid://dpmns86toab2w"]
 
 [ext_resource type="Script" path="res://Scripts/ventana_felicidades.gd" id="1_jmqn7"]
 [ext_resource type="FontFile" uid="uid://doo5wq3dunosb" path="res://font/SofadiOne-Regular.ttf" id="1_ns03e"]
 [ext_resource type="StyleBox" uid="uid://2jtjkqs8fwxq" path="res://styles/btn_normal.tres" id="2_2gich"]
 [ext_resource type="StyleBox" uid="uid://h6bgr3hde3fm" path="res://styles/btn_hover.tres" id="3_m2pyy"]
 [ext_resource type="Texture2D" uid="uid://dw2ag3riy221v" path="res://img/person_idea.png" id="4_rteh1"]
+[ext_resource type="AudioStream" uid="uid://b5y3fetlrborw" path="res://sonido/boton.mp3" id="6_huclv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jscfu"]
 bg_color = Color(1, 1, 1, 1)
@@ -98,5 +99,8 @@ text = "CONTINUAR"
 position = Vector2(196, 198)
 scale = Vector2(0.324, 0.324)
 texture = ExtResource("4_rteh1")
+
+[node name="boton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_huclv")
 
 [connection signal="pressed" from="Panel/ventana/control_ventana/btnaceptar" to="." method="_on_btnaceptar_pressed"]

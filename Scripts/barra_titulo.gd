@@ -3,6 +3,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	
 	var name = get_current_scene_name()
 	if name == 'registros':
 		$Label/Label.text = 'REGISTROS'
@@ -16,6 +17,7 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_button_pressed() -> void:
+	$boton.play();
 	var current_scene = get_current_scene_name();
 	match current_scene:
 		'nivel_1', 'nivel_2', 'nivel_3', 'registros':

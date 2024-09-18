@@ -15,11 +15,13 @@ func _process(delta: float) -> void:
 
 
 func _on_btncancelar_pressed() -> void:
+	$boton.play();
 	queue_free();
 
 
 func _on_btnaceptar_pressed() -> void:
 	var nombre = $ventana/control_ventana/nombre.text;
+	$boton.play();
 	if nombre != '' && Global.nivel != '0': 
 		Global.nombre_jugador = nombre;
 		DataManager.save_data()
@@ -28,6 +30,7 @@ func _on_btnaceptar_pressed() -> void:
 
 
 func _on_btn_nivel_pressed(nivel: String) -> void:
+	$boton.play();
 	colorear(nivel)
 	Global.grado_jugador = nivel;
 	match nivel:

@@ -17,7 +17,7 @@ func load_data():
 		students.reverse()
 		show_data(students)
 	else:
-		print('No hay registros')
+		#print('No hay registros')
 
 
 #func show_data(students: Array):
@@ -44,8 +44,8 @@ func load_data():
 
 func show_data(students: Array):
 	for student in students:
-		print(student)
-		print('------------------------')
+		#print(student)
+		#print('------------------------')
 		
 		# Crear un HBoxContainer para la nueva fila
 		var fila = HBoxContainer.new()
@@ -104,3 +104,8 @@ func calculate_completion(student : Dictionary) -> float:
 	# Calcular el porcentaje
 	var completion_percentage = (float(completed) / float(total)) * 100
 	return completion_percentage
+
+
+func _on_hambiente_finished():
+	$hambiente.stop();
+	$hambiente.play();

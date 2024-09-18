@@ -11,6 +11,6 @@ func _process(delta):
 	pass
 
 
-func _on_btnaceptar_pressed():
-	$boton.play();
-	Trans.change_scene('res://Escenas/nivel_'+ Global.nivel +'.tscn')
+func _on_hambiente_finished():
+	$hambiente.stop();
+	$hambiente.play();

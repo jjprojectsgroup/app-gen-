@@ -18,26 +18,36 @@ func _on_btnsalir_pressed() -> void:
 
 
 func _on_btnpregunta_pressed(numero: String) -> void:
+	$boton.play();
 	Global.numero_pregunta = numero;
 	Trans.change_scene('res://Escenas/pregunta.tscn')
 
 func _on_btnactividad_1_pressed() -> void:
+	$boton.play();
 	Trans.change_scene('res://Escenas/pregunta_completa.tscn')
 
 
 func _on_btnactividad_2_pressed() -> void:
+	$boton.play();
 	Global.numero_video = '4';
 	DataManager.update_answer(true, 'actividad_2')
 	Trans.change_scene('res://Escenas/videos.tscn')
 
 
 func _on_btnmanualidad_1_pressed(numero: String) -> void:
+	$boton.play();
 	Global.numero_video = numero;
 	DataManager.update_answer(true, 'manualidad_1')
 	Trans.change_scene('res://Escenas/videos.tscn')
 
 
 func _on_btnmanualidad_2_pressed(numero: String) -> void:
+	$boton.play();
 	Global.numero_video = numero;
 	DataManager.update_answer(true, 'manualidad_2')
 	Trans.change_scene('res://Escenas/videos.tscn')
+
+
+func _on_hambiente_finished():
+	$hambiente.stop();
+	$hambiente.play();

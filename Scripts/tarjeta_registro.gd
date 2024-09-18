@@ -15,6 +15,7 @@ func set_extra_data(data: Dictionary):
 	extra_data = data
 
 func _on_button_pressed() -> void:
+	$boton.play();
 	print(extra_data)
 	var escena_emergente = preload("res://componentes/tarjeta_mostrar.tscn").instantiate()
 	escena_emergente.get_data(extra_data)

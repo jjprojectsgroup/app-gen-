@@ -13,15 +13,22 @@ func _process(delta: float) -> void:
 
 
 func registrar() -> void:
+	$boton.play();
 	var escena_emergente = preload("res://componentes/ventana_registro.tscn").instantiate()
 	get_tree().root.add_child(escena_emergente)
 
 
 func _on_btndatos_pressed() -> void:
-	get_tree().change_scene_to_file('res://Escenas/registros.tscn')
-	
+	$boton.play();
+	Trans.change_scene('res://Escenas/registros.tscn')	
 	#Trans.change_scene('res://Escenas/registros.tscn')
 
 
 func _on_btnsalir_pressed() -> void:
+	$boton.play();
 	get_tree().quit();
+
+
+func _on_hambiente_finished():
+	$hambiente.stop();
+	$hambiente.play();

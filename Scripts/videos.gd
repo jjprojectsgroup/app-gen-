@@ -88,4 +88,5 @@ func _on_progressbar_gui_input(event: InputEvent) -> void:
 
 func _on_button_pressed() -> void:
 	$reproductor.stop()
+	$boton.play();
 	Trans.change_scene('res://Escenas/nivel_'+ Global.nivel +'.tscn')

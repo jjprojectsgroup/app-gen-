@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://wsqo2met4pyt"]
+[gd_scene load_steps=12 format=3 uid="uid://wsqo2met4pyt"]
 
 [ext_resource type="Texture2D" uid="uid://gl8sus00ymdj" path="res://img/fondo_principal3.jpg" id="1_4ov16"]
 [ext_resource type="Script" path="res://Scripts/preguntas.gd" id="1_kl2mo"]
@@ -7,6 +7,8 @@
 [ext_resource type="FontFile" uid="uid://doo5wq3dunosb" path="res://font/SofadiOne-Regular.ttf" id="4_u66cs"]
 [ext_resource type="StyleBox" uid="uid://2jtjkqs8fwxq" path="res://styles/btn_normal.tres" id="5_uukf8"]
 [ext_resource type="StyleBox" uid="uid://h6bgr3hde3fm" path="res://styles/btn_hover.tres" id="6_qf8ke"]
+[ext_resource type="AudioStream" uid="uid://b5y3fetlrborw" path="res://sonido/boton.mp3" id="8_bdr5t"]
+[ext_resource type="AudioStream" uid="uid://x1nauk5p4jxp" path="res://sonido/hambiental.mp3" id="9_vtknh"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_16qs3"]
 bg_color = Color(1, 1, 0.960784, 1)
@@ -139,4 +141,12 @@ autowrap_mode = 2
 
 [node name="barra_titulo" parent="." instance=ExtResource("2_f1u65")]
 
+[node name="boton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_bdr5t")
+
+[node name="hambiente" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_vtknh")
+autoplay = true
+
 [connection signal="pressed" from="Control/fondo_respuesta/Button" to="." method="_on_guardar_pressed"]
+[connection signal="finished" from="hambiente" to="." method="_on_hambiente_finished"]

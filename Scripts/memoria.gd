@@ -17,6 +17,7 @@ func _on_card_pressed(card: String, button_name: String) -> void:
 	if par.size() >= 2:
 		is_validating = true
 		if par[0][0] == card:
+			$check.play();
 			flat_selected_card(button_name, false)
 			flat_selected_card(par[0][1], false)
 			par_count += 1
@@ -58,8 +59,10 @@ func play_card_animation(button_name: String, reverse: bool) -> void:
 
 	if reverse:
 		anim_player.play_backwards("voltear")
+		$slide_carta.play();
 	else:
 		anim_player.play("voltear")
+		$slide_carta.play();
 
 # Función para mostrar la ventana de felicitaciones
 func show_felicidades() -> void:
@@ -70,3 +73,8 @@ func show_felicidades() -> void:
 func hide_felicidades() -> void:
 	var ventana_felicidades = get_node("ventana_felicidades")
 	ventana_felicidades.hide()
+
+
+func _on_hambiente_finished():
+	$hambiente.stop();
+	$hambiente.play();

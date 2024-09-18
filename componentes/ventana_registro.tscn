@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cu17wyire743o"]
+[gd_scene load_steps=10 format=3 uid="uid://cu17wyire743o"]
 
 [ext_resource type="Script" path="res://Scripts/ventana_registro.gd" id="1_35dfx"]
 [ext_resource type="FontFile" uid="uid://doo5wq3dunosb" path="res://font/SofadiOne-Regular.ttf" id="1_wujbf"]
@@ -6,6 +6,7 @@
 [ext_resource type="StyleBox" uid="uid://h6bgr3hde3fm" path="res://styles/btn_hover.tres" id="3_giuje"]
 [ext_resource type="StyleBox" uid="uid://b2qeod4ul35tu" path="res://styles/btn_grado_hover.tres" id="4_uieeq"]
 [ext_resource type="StyleBox" uid="uid://d3bf6a12h7bll" path="res://styles/btn_grado_normal.tres" id="5_2mugn"]
+[ext_resource type="AudioStream" uid="uid://b5y3fetlrborw" path="res://sonido/boton.mp3" id="7_r5au4"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v7e1y"]
 bg_color = Color(1, 1, 1, 1)
@@ -233,6 +234,9 @@ theme_override_styles/pressed = ExtResource("4_uieeq")
 theme_override_styles/focus = ExtResource("4_uieeq")
 keep_pressed_outside = true
 text = "   5   "
+
+[node name="boton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_r5au4")
 
 [connection signal="pressed" from="ventana/control_ventana/Control/btncancelar" to="." method="_on_btncancelar_pressed"]
 [connection signal="pressed" from="ventana/control_ventana/Control/btnaceptar" to="." method="_on_btnaceptar_pressed"]

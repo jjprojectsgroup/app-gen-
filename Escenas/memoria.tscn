@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dnuwdwuovmifl"]
+[gd_scene load_steps=17 format=3 uid="uid://dnuwdwuovmifl"]
 
 [ext_resource type="Script" path="res://Scripts/memoria.gd" id="1_ifym0"]
 [ext_resource type="StyleBox" uid="uid://diiy4ui5efpvu" path="res://styles/tarjeta.res" id="6_dmk1o"]
@@ -13,6 +13,7 @@
 [ext_resource type="AudioStream" uid="uid://csbx1opq8s251" path="res://sonido/check.mp3" id="14_kd23j"]
 [ext_resource type="PackedScene" uid="uid://daxg4d2o0v72l" path="res://componentes/card4.tscn" id="14_yg4uv"]
 [ext_resource type="PackedScene" uid="uid://r0fa3ds4ycyq" path="res://componentes/card5.tscn" id="15_6qtdm"]
+[ext_resource type="AudioStream" uid="uid://x1nauk5p4jxp" path="res://sonido/hambiental.mp3" id="15_alsdp"]
 [ext_resource type="PackedScene" uid="uid://dbcrpb1a13p0x" path="res://componentes/card6.tscn" id="16_ejker"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ej28l"]
@@ -293,6 +294,10 @@ stream = ExtResource("13_27cd1")
 [node name="check" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("14_kd23j")
 
+[node name="hambiente" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_alsdp")
+autoplay = true
+
 [connection signal="pressed" from="Card1/Button" to="." method="_on_card_pressed" binds= ["1", "1"]]
 [connection signal="pressed" from="Card2/Button" to="." method="_on_card_pressed" binds= ["2", "2"]]
 [connection signal="pressed" from="Card3/Button" to="." method="_on_card_pressed" binds= ["3", "3"]]
@@ -305,3 +310,4 @@ stream = ExtResource("14_kd23j")
 [connection signal="pressed" from="Card10/Button" to="." method="_on_card_pressed" binds= ["4", "10"]]
 [connection signal="pressed" from="Card11/Button" to="." method="_on_card_pressed" binds= ["5", "11"]]
 [connection signal="pressed" from="Card12/Button" to="." method="_on_card_pressed" binds= ["6", "12"]]
+[connection signal="finished" from="hambiente" to="." method="_on_hambiente_finished"]

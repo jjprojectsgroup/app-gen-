@@ -51,5 +51,11 @@ func _preguntar():
 
 
 func _on_guardar_pressed() -> void:
+	$boton.play();
 	DataManager.update_answer($Control/fondo_respuesta/respuesta.text, pregunta_actual)
 	Trans.change_scene('res://Escenas/nivel_'+ Global.nivel +'.tscn')
+
+
+func _on_hambiente_finished():
+	$hambiente.stop();
+	$hambiente.play();

@@ -30,6 +30,7 @@ func _ready() -> void:
 	hide_felicidades()  # Asegúrate de que la ventana esté oculta al inicio
 
 func _on_button_pressed(button_id: String):
+	$boton.play();
 	pressed_buttons.append(button_id)
 	update_button_styles()
 	check_word(pressed_buttons)
@@ -43,6 +44,7 @@ func check_word(pressed_buttons: Array):
 			count_found_words()
 			var palabra = get_node(palabra_path)
 			palabra.modulate = Color.FOREST_GREEN
+			
 			# Añadir los botones al registro de botones encontrados
 			for button_name in pressed_buttons:
 				if not button_name in found_buttons:
@@ -52,6 +54,7 @@ func check_word(pressed_buttons: Array):
 
 func count_found_words():
 	found_words += 1
+	$check.play();
 	if found_words >= total_words:
 		print('Todas las palabras encontradas')
 		show_felicidades()  # Muestra la ventana cuando todas las palabras sean encontradas
@@ -118,3 +121,8 @@ func show_felicidades() -> void:
 func hide_felicidades() -> void:
 	var ventana_felicidades = get_node("ventana_felicidades")
 	ventana_felicidades.hide()
+
+
+func _on_hambiente_finished():
+	$hambiente.stop();
+	$hambiente.play();

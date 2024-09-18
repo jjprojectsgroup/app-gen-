@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bo8xu640dcdj1"]
+[gd_scene load_steps=8 format=3 uid="uid://bo8xu640dcdj1"]
 
 [ext_resource type="Script" path="res://Scripts/registros.gd" id="1_liyhq"]
 [ext_resource type="Texture2D" uid="uid://gl8sus00ymdj" path="res://img/fondo_principal3.jpg" id="1_uyhci"]
 [ext_resource type="PackedScene" uid="uid://dxmaohffffinq" path="res://componentes/barra_titulo.tscn" id="1_vre7c"]
+[ext_resource type="AudioStream" uid="uid://x1nauk5p4jxp" path="res://sonido/hambiental.mp3" id="4_satjs"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ib46q"]
 bg_color = Color(0.843137, 0.835294, 0.843137, 1)
@@ -108,3 +109,9 @@ offset_bottom = 906.0
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+
+[node name="hambiente" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_satjs")
+autoplay = true
+
+[connection signal="finished" from="hambiente" to="." method="_on_hambiente_finished"]
