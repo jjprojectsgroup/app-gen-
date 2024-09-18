@@ -15,7 +15,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-
 func _on_button_pressed() -> void:
 	var current_scene = get_current_scene_name();
 	match current_scene:
@@ -30,7 +29,6 @@ func get_current_scene_name() -> String:
 	if current_scene != null:
 		return current_scene.name
 	return ""
-
 
 func _on_respuesta_text_changed() -> void:
 	pass # Replace with function body.

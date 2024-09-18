@@ -9,14 +9,34 @@ var ffmpeg_video_stream = FFmpegVideoStream.new() # se declara el plugin de repr
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	#var ruta_video = 'res://video/video-'+Global.numero_video+'.mov'
+	#if Global.numero_video == '5' || Global.numero_video == '6':
+		#ruta_video = 'res://video/video-'+Global.numero_video+'.mp4'
+	#ffmpeg_video_stream.file = ruta_video
+	#$reproductor.set_stream(ffmpeg_video_stream)
+	## Configura la duración máxima de la barra de progreso
+	#$progressbar.min_value = 0
+	#$progressbar.max_value = $reproductor.get_stream_length()
+	
 	var ruta_video = 'res://video/video-'+Global.numero_video+'.mov'
-	if Global.numero_video == '5' || Global.numero_video == '6':
-		ruta_video = 'res://video/video-'+Global.numero_video+'.mp4'
-	ffmpeg_video_stream.file = ruta_video
-	$reproductor.set_stream(ffmpeg_video_stream)
-	# Configura la duración máxima de la barra de progreso
-	$progressbar.min_value = 0
-	$progressbar.max_value = $reproductor.get_stream_length()
+	if OS.get_name() == "Android":
+   		 # Código específico para Android
+		print("Ejecutándose en Android")
+		ruta_video = load('res://video/video-'+Global.numero_video+'.ogv') 
+		print("Ejecutándose en Android")
+		$reproductor.set_stream(ruta_video)
+		$reproductor.size.y = 432
+		$btnplaypause.position.x = 362
+		#$progressbar.visible = false
+		$btnback.visible = false
+		$btnnext.visible = false
+	elif OS.get_name() == "Windows":
+		# Código específico para Windows
+		print("Ejecutándose en Windows")
+		ffmpeg_video_stream.file = ruta_video
+		$reproductor.set_stream(ffmpeg_video_stream)
+		$progressbar.min_value = 0
+		$progressbar.max_value = $reproductor.get_stream_length()
 	$reproductor.play()
 
 
